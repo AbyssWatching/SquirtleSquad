@@ -19,3 +19,9 @@ cards.post('/:id', (req, res) => {
     res.json({mssg: 'DELETE a card'})
 })
 
+// UPDATE a cards rating? The user can update how much they value a card specifically
+cards.patch('/:id', (req, res) => {
+    res.json({mssg: 'UPDATE a card'})
+})
+
+module.exports = cards
