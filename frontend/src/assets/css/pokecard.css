@@ -1,4 +1,5 @@
 .pokecard {
+    padding: 50px;
     margin: 50px 10px 10px 50px;
     box-shadow: 2px 2px 5px;
     height: 300px;
