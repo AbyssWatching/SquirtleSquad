@@ -1,4 +1,4 @@
-function rollGacha(e)
+// function rollGacha(e)
 
 // Use this as a reference to build this system off of.
 // Excluding the new Scarlet and Violet game there 905 Pokemon available.
@@ -13,3 +13,5 @@ function randomPokemon() {
         console.log(data);
       });
   }
+
+randomPokemon() //TEST
