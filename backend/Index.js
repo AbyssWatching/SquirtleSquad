@@ -1,3 +1,4 @@
+
 // DEPENDENCIES
 const express = require('express')
 const app = express()
@@ -5,6 +6,8 @@ const app = express()
 //CONFIG
 require('dotenv').config()
 app.use(express.json())
+
+const port = process.env.PORT;
 
 // ROOT
 app.get('/', (req, res) => {
@@ -16,6 +19,7 @@ app.get('/', (req, res) => {
 // CONTROLLERS
 const cardsController = require('./controllers/cardsController')
 app.use('/cards', cardsController)
+
 
 // LISTEN
 app.listen(process.env.PORT, () => {
