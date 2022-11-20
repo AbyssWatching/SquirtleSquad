@@ -23,5 +23,5 @@ app.use('/cards', cardsController)
 
 // LISTEN
 app.listen(process.env.PORT, () => {
-    console.log(`Catching them on port: ${process.env.PORT}`)
+    console.log(`Catching them on port: ${port}`)
 })
