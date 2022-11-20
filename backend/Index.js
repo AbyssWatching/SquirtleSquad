@@ -1,23 +1,23 @@
-//Things required for express
-const express = require(`express`);
-const app = exoress();
+// DEPENDENCIES
+const express = require('express')
+const app = express()
 
-//
-//app.use("/", require("./controllers/"))
+//CONFIG
+require('dotenv').config()
+app.use(express.json())
 
-//home page
-app.get("/ ", (req, res) => {
-    res.write("home")
+// ROOT
+app.get('/', (req, res) => {
+    res.status(200).json({
+        message: 'Welcome to PokeCha'
+    })
 })
 
-//all other pages are 404
-app.get('*', (req, res) => {
-    
-    res.write("error404")
-   
+// CONTROLLERS
+const cardsController = require('./controllers/cardsController')
+app.use('/cards', cardsController)
+
+// LISTEN
+app.listen(process.env.PORT, () => {
+    console.log(`Catching them on port: ${process.env.PORT}`)
 })
-
-//Listen
-//app.listen(process.env.PORT)
-
-app.listen(PORT)
