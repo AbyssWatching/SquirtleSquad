@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-
+import Collection from './components/Collection' ;
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
        <Navbar />
       <h1>{ title }</h1>
       <Home/>
-
+      <Collection/>
     </div>
   );
 }
