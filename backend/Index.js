@@ -19,7 +19,7 @@ moongoose.connect(uri);
 
 const connection = moongoose.connection;
 connection.once('open', ()=> {
-    console.log(`YOU SEE THIS THE DB Connected suck a D***`);
+    console.log(`YOU SEE THIS THE DB Connectem "`);
 })
 
 
