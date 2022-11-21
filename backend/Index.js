@@ -15,11 +15,11 @@ app.use(cors());
 app.use(express.json())
 
 // DB CONNECTION
-const sequelize = new Sequelize('postgres://postgres:1avende5T@pokechadb.cgheqejzvqcj.us-west-2.rds.amazonaws.com/pokechadb')
+const sequelize = new Sequelize(process.env.PG_URI)
 async function run (){
     try {
         await sequelize.authenticate();
-        console.log('This is no Gundam boi, I am a coding GOD, and the connection worked');
+        console.log('This is no Zaku boi, I am a coding GOD, and the connection worked');
     } catch (error) {
         console.error('You done messed up', error);
     }
