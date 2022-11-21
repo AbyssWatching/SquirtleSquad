@@ -3,8 +3,16 @@
 // Use this as a reference to build this system off of.
 // Excluding the new Scarlet and Violet game there 905 Pokemon available.
 function randomPokemon() {
-    var randomNumber = Math.floor(Math.random() * 905) + 1;
-    var url = 'http://pokeapi.co/api/v2/pokemon/' + randomNumber;
+    
+  //grabing pokemon from API
+    var url = 'http://pokeapi.co/api/v2/pokemon/' + getPokemonID();
+
+    //**verify pokemon doesn't already exist in collections**
+    //code goes here
+    //**
+    //
+
+    //we will work on this
     fetch(url)
       .then(function(response) {
         return response.json();
@@ -13,6 +21,14 @@ function randomPokemon() {
         console.log(data);
       });
   }
+
+//Randomm number generator for the number of pokemon
+function getPokemonID(){
+
+  return (
+    Math.floor(Math.random() * 905) + 1
+    );
+}
 
 randomPokemon() //TEST
 
