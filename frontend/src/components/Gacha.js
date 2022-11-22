@@ -2,7 +2,10 @@ import React from 'react';
 
 
 const Gacha = () => {
-    return (  );
+    return ( 
+        <style/>
+
+     );
 }
  
 export default Gacha;
