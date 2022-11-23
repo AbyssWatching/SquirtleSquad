@@ -5,6 +5,7 @@ const express = require('express')
 const cards = express.Router()
 const db = require('../models')
 const { Cards } = db
+const { Op } = require('sequelize')
 
 // INDEX
 cards.get('/', async (req, res) => {
