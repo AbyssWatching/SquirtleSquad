@@ -7,8 +7,18 @@ const db = require('../models')
 const { Cards } = db
 
 // INDEX
-cards.get('/', (req, res) => {
-    res.json({mssg: 'GET all cards'})
+cards.get('/', async (req, res) => {
+    try {
+        const allCards = await Cards.findAll({
+            order: [ [ 'poke_id', 'ASC' ] ],
+            where: {
+                name: { [Op.like]: `%${req.query.name ? req.query.name : ''}%` }
+            }
+        })
+        res.status(200).json(allCards)
+    } catch (error) {
+        res.status(500).json(error)
+    }
 })
 
 // POST, ideally this the route that gets used when the "Gatcha" is rolled
