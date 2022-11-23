@@ -21,10 +21,14 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
+      secondary_type: {
+        type: Sequelize.STRING.INTEGER,
+        allowNull: true
+      },
       image: {
         type: Sequelize.STRING,
         allowNull: false
-      }
+      },
     });
   },
   async down(queryInterface, Sequelize) {

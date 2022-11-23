@@ -31,6 +31,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false
     },
+    secondary_type: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
     image: {
       type: DataTypes.STRING,
       allowNull: false
