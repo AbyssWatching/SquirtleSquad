@@ -13,8 +13,6 @@ app.use(express.json())
 app.use(cors());
 app.use(express.json())
 
-const db = require('/models/pokemonCard')
-db.sequelize.sync()
 
 // DB CONNECTION
 const sequelize = new Sequelize(process.env.PG_URI)

@@ -21,11 +21,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
-      stats: {
-        type: Sequelize.STRING,
-        allowNull: false
-      },
-      sprites: {
+      image: {
         type: Sequelize.STRING,
         allowNull: false
       }

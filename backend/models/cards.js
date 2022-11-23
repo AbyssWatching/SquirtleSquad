@@ -27,14 +27,11 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false
     },
-    types: {
+    type: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    stats: {
-      type: DataTypes.STRING,
-      allowNull: false},
-    sprites: {
+    image: {
       type: DataTypes.STRING,
       allowNull: false
     },
