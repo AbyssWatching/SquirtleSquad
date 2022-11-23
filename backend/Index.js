@@ -6,13 +6,13 @@ const { Sequelize } = require('sequelize')
 
 
 //CONFIG
-//DEPENDENCIES
 const app = express()
 require('dotenv').config()
 app.use(express.json())
 
 app.use(cors());
 app.use(express.json())
+
 
 // DB CONNECTION
 const sequelize = new Sequelize(process.env.PG_URI)
