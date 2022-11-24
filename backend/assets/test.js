@@ -1,7 +1,7 @@
 var randomNumber = Math.floor(Math.random() * 905) + 1;
 
 
-var url = 'http://pokeapi.co/api/v2/pokemon/' + 092;
+var url = 'http://pokeapi.co/api/v2/pokemon/' + 132;
 
 
 fetch(url)
@@ -18,8 +18,9 @@ fetch(url)
       name: data.name,
       image: data.sprites.front_default,
       type: data.types[0].type.name,
-      secondary_type: data.types[1].type.name
+      secondary_type: data.types[1]?.type.name ?? null 
     };
+    
       
 var urlCards = 'http://localhost:3000/cards';
 
