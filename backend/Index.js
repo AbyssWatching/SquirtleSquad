@@ -39,7 +39,7 @@ app.use('/cards', cardsController)
 
 // LISTEN
 const port = process.env.PORT;
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 9000, () => {
     console.log(`Catching them on port: ${port}`)
     
 })
