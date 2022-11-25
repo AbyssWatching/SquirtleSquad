@@ -10,3 +10,5 @@ const getCards = async (req, res) => {
     res.status(200).json(cards)
   }
 //
+
+module.exports = {getCards}
