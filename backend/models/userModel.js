@@ -15,4 +15,9 @@ const userSchema = new Schema({
     }
 })
 
+
+// sign up method with validation
+
+//login method
+
 module.exports = mongoose.model('User', userSchema)
