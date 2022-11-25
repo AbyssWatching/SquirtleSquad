@@ -14,15 +14,15 @@ fetch(url)
   .then(function(data) 
     {
       var cards = {
-      poke_id: data.id,
+      id: data.id,
       name: data.name,
       image: data.sprites.front_default,
-      type: data.types[0].type.name,
-      secondary_type: data.types[1]?.type.name ?? null 
+      type1: data.types[0].type.name,
+      type2: data.types[1]?.type.name ?? null 
     };
     
       
-var urlCards = 'http://localhost:3000/cards';
+var urlCards = 'http://localhost:9000/api/cards';
 
 fetch(urlCards, 
     {
@@ -47,5 +47,4 @@ fetch(urlCards,
 
   })
 
-// secondary type is being recieved as undefined at not null, it needs to be set to null, verify with 132 Ditto 092 Gengar
 // add a quantity column then verify pokemon id doesn't already exist and if it does add a plus one to quantity

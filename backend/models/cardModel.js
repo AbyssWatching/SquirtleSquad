@@ -26,7 +26,12 @@ const cardSchema = new Schema({
     height: {
         type: String,
         required: true
+    },
+    image: {
+        type: String,
+        required: true
     }
+    
 
 
 })
