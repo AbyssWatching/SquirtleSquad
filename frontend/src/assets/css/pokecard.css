@@ -1,7 +1,13 @@
+.collectionpage {
+    padding: 10%;
+    background-color: rgb(253, 196, 90);
+}
+
 .pokecard {
     padding: 50px;
     margin: 50px 10px 10px 50px;
     box-shadow: 2px 2px 5px;
     height: 300px;
     width: 200px;
+    background-color: bisque;
 }
