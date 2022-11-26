@@ -26,7 +26,11 @@ async function rollPokemon() {
         image: pokemonImage
     };
     console.log(pokemonDataToPost);
-    const response = await axios.post('http://localhost:9000/api/cards', pokemonDataToPost);
+    const response = await axios.post('http://localhost:9000/api/cards', pokemonDataToPost, {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem(`token`)}`
+      }
+    });
     return response.data;
   }
 

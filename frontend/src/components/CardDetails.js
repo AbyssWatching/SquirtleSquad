@@ -12,7 +12,7 @@ const CardDetails = ({ card }) => {
       return
     }
 
-    const response = await fetch('/api/cards/' + card._id, {
+    const response = await fetch('http://localhost:9000/api/cards/' + card._id, {
       method: 'DELETE',
       headers: {
         'Authorization': `Bearer ${user.token}`
