@@ -1,4 +1,5 @@
 import React from 'react'
+import '../assets/css/gacha.css'
 
 function clickMe(){
     alert('You clicked me!')
