@@ -1,2 +1,0 @@
-# SquirtleSquad
-Team Proj
