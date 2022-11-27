@@ -1,7 +1,8 @@
 .collectionpage {
     /* padding: 10%; */
     
-    display: flex
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 
 /* .pokecard {

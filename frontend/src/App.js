@@ -12,6 +12,22 @@ function App() {
     .then((data) => setMessage(data.message))
   }, []);
 
+  // const getPokecards = async () => {
+  //   try {
+  //     const response = await fetch("http://localhost:3000/cards");
+  //     const jsonData = await response.json();
+  
+  //     console.log(jsonData)
+  //   } catch (err) {
+  //     console.error(err.message)
+  //   }
+  // }
+  
+  // useEffect(() => {
+  //   getPokecards();
+  // }, []);
+
+  
   return (
     <div className="App">
       <Gacha />
