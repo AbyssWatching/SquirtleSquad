@@ -35,9 +35,14 @@
 
 .pokemon-name {
     text-align: center;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: lighter;
     padding: 10px;
+}
+
+.pokemon-type {
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .pokemon-height, .pokemon-weight {

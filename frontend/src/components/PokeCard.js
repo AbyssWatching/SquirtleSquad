@@ -10,6 +10,7 @@ export default function PokeCard() {
         </div>
         <div className='pokecard-content-container'>
           <h1 className='pokemon-name'>Name</h1>
+          <p className='pokemon-type'>Types:</p>
           <p className='pokemon-height'>Height:</p>
           <p className='pokemon-weight'>Weight:</p>
         </div>
