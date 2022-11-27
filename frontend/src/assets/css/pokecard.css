@@ -1,9 +1,10 @@
-/* .collectionpage {
-    padding: 10%;
-    background-color: rgb(253, 196, 90);
+.collectionpage {
+    /* padding: 10%; */
+    
+    display: flex
 }
 
-.pokecard {
+/* .pokecard {
     padding: 50px;
     margin: 50px 10px 10px 50px;
     border-radius: 5px;
@@ -11,7 +12,7 @@
     height: 300px;
     width: 200px;
     background-color: bisque;
-} */
+} */ 
 
 * {
     margin: 0px;
@@ -22,6 +23,7 @@
     background-color: yellowgreen;
     width: 200px;
     height: 250px;
+    margin: 5px;
 }
 
 .background {
@@ -29,6 +31,7 @@
 }
 
 .sprite {
+    align-items: center;
     width: 150px;
     height: 150px;
 }

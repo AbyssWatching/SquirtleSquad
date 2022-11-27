@@ -6,7 +6,8 @@ export default function PokeCard() {
     <div className='pokecard'>
       <div className='pokecard-container'>
         <div className='pokecard-image'>
-          <image className='sprite' alt='pokemon sprite'>image</image>
+          {/* update image tags to "img" later */}
+          <img className='sprite' alt='pokemon sprite'></img>
         </div>
         <div className='pokecard-content-container'>
           <h1 className='pokemon-name'>Name</h1>
