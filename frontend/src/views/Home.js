@@ -4,7 +4,8 @@ import { useAuthContext } from "../hooks/useAuthContext"
 
 // components
 import CardDetails from '../components/CardDetails'
-// import CardForm from '../components/CollectionForm'
+// import rollPokemon from '../components/GachaSystem'
+import GachaSystem from '../components/GachaSystem'
 
 const Home = () => {
   const {cards, dispatch} = useCardsContext()
@@ -31,10 +32,10 @@ const Home = () => {
     <div className="home">
       <div className="cards">
         {cards && cards.map((card) => (
-          <CardDetails key={card._id} card={card} />
+          <CardDetails key={card.id} card={card} />
         ))}
       </div>
-      {/* <CardCollection/> */}
+      <GachaSystem />
     </div>
   )
 }

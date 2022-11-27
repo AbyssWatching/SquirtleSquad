@@ -3,24 +3,24 @@ const mongoose = require('mongoose')
 
 // GET ALL CARDS IN COLLECTION
 const getCards = async (req, res) => {
-    const user_id = req.user._id
+    const userid = req.user.id
   
-    const cards = await Card.find({user_id}).sort({createdAt: -1})
+    const cards = await Card.find({userid}).sort({createdAt: -1})
   
     res.status(200).json(cards)
   }
 // ADD NEW CARD TO COLLECTION
 const postCard = async (req, res) => {
-    const {id, name, type1, type2, weight, height, image} = req.pokemonDataToPost
+    const {id, name, type1, type2, weight, height, image} = req.body
 
     try {
-        const user_id = req.user._id
-        const card = await Card.create({id, name, type1, type2, weight, height, image})
+        const userid = req.user.id
+        const card = await Card.create({id, name, type1, type2, weight, height, image, userid})
         res.status(200).json(card)
     } catch (err) {
-        res.status(400).json({err: error.message})
+        res.status(400).json({err: err.message})
     }
 }
 
 
-module.exports = {getCards}
+module.exports = {getCards, postCard}

@@ -1,6 +1,6 @@
 const express = require('express')
 
-const {getCards} = require('../controllers/cardController')
+const {getCards, postCard} = require('../controllers/cardController')
 const requireAuth = require('../middleware/requireAuth')
 
 const router = express.Router()
@@ -11,6 +11,6 @@ router.use(requireAuth)
 // GET ALL CARDS IN COLLECTION
 router.get('/', getCards)
 
-router.post('/')
+router.post('/', postCard)
 
 module.exports = router
