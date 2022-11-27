@@ -3,7 +3,7 @@ import { useCardsContext } from "./useCardsContext";
 
 export const useLogout = () => {
     const { dispatch } = useAuthContext()
-    const { dispatch: dispatchCards } = useCardsContext
+    const { dispatch: dispatchCards } = useCardsContext()
     
 
     const logout = () => {
