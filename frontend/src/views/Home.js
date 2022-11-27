@@ -4,7 +4,6 @@ import { useAuthContext } from "../hooks/useAuthContext"
 
 // components
 import CardDetails from '../components/CardDetails'
-// import rollPokemon from '../components/GachaSystem'
 import GachaSystem from '../components/GachaSystem'
 
 const Home = () => {
@@ -13,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchCards = async () => {
-      const response = await fetch('/api/cards', {
+      const response = await fetch('http://localhost:9000/api/cards', {
         headers: {'Authorization': `Bearer ${user.token}`},
       })
       const json = await response.json()

@@ -21,13 +21,13 @@ const CardDetails = ({ card }) => {
     const json = await response.json()
 
     if (response.ok) {
-      dispatch({type: 'DELETE_Card', payload: json})
+      dispatch({type: 'DELETE_CARD', payload: json})
     }
   }
 
   return (
     <div className="card-details">
-      <h4>{card.image}</h4>
+      <img url={card.img} alt='pokemon' />
       <span className="" onClick={handleClick}>delete</span>
     </div>
   )
