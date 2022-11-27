@@ -28,6 +28,7 @@ const CardDetails = ({ card }) => {
   return (
     <div className="card-details">
       <img url={card.img} alt='pokemon' />
+      <p>{card.name}</p>
       <span className="" onClick={handleClick}>delete</span>
     </div>
   )
