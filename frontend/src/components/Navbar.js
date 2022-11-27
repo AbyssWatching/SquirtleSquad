@@ -5,6 +5,7 @@ import React from 'react';
 const Navbar = () => {
     return ( 
         <nav className="navbar">
+           <Navbar/>
             <h1>POKE-CHA</h1>
             <div className="links">
                 <a href="/"> Home</a>
