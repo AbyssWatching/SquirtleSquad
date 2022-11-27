@@ -1,4 +1,4 @@
-.collectionpage {
+/* .collectionpage {
     padding: 10%;
     background-color: rgb(253, 196, 90);
 }
@@ -11,4 +11,36 @@
     height: 300px;
     width: 200px;
     background-color: bisque;
+} */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.pokecard-container {
+    background-color: yellowgreen;
+    width: 200px;
+    height: 250px;
+}
+
+.background {
+    text-align: center;
+}
+
+.sprite {
+    width: 150px;
+    height: 150px;
+}
+
+.pokemon-name {
+    text-align: center;
+    font-size: 19px;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+.pokemon-height, .pokemon-weight {
+    font-size: 12px;
+    letter-spacing: 1px;
 }
