@@ -20,12 +20,20 @@
     padding: 0px;
 }
 
-.gachaButton {
+.roll-button {
     padding: 8px;
     font-size: large;
     background-color: #658EEB;
     color: yellow;
     border-color: #5578C9;
+    margin: auto;
+}
+
+.roll-button:hover {
+    background-color: #5578C9;
+    color: white;
+    border-color: #5578C9;
+    box-shadow: 1px 1px 3px yellow;
 }
 
 .card-collection {
@@ -47,10 +55,10 @@
 }
 
 .sprite {
-    align-items: center;
+    margin: auto;
     width: 150px;
     height: 150px;
-    background-image: radial-gradient( white 1%, transparent 30%);
+    background-image: radial-gradient( white 10%, transparent 35%);
 }
 
 .pokemon-name {
@@ -85,4 +93,10 @@
     color: white;
     font-size: medium;
     border: 2px solid black;
+}
+
+.delete-button:hover {
+    background-color: #ff1717;
+    color: #feffec;
+    box-shadow: 1px 1px 5px black;
 }
