@@ -1,40 +1,38 @@
-import React, { useState, useEffect } from 'react'
-import Collection from './components/Collection';
-import Gacha from './components/Gacha';
-// import Home from './components/Home';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { useAuthContext } from './hooks/useAuthContext'
+
+// pages & components
+import Home from './views/Home'
+import Login from './views/Login'
+import Signup from './views/Signup'
+import Navbar from './components/Navbar'
 
 function App() {
-  const [message, setMessage] = useState("");
+  const { user } = useAuthContext()
 
-  useEffect(() => {
-    fetch("http://localhost:9000")
-    .then((res) => res.json())
-    .then((data) => setMessage(data.message))
-  }, []);
-
-  // const getPokecards = async () => {
-  //   try {
-  //     const response = await fetch("http://localhost:3000/cards");
-  //     const jsonData = await response.json();
-  
-  //     console.log(jsonData)
-  //   } catch (err) {
-  //     console.error(err.message)
-  //   }
-  // }
-  
-  // useEffect(() => {
-  //   getPokecards();
-  // }, []);
-
-  
   return (
     <div className="App">
-      <Gacha />
-      <Collection />
+      <BrowserRouter>
+        <Navbar />
+        <div className="views">
+          <Routes>
+            <Route 
+              path="/" 
+              element={user ? <Home /> : <Navigate to="/login" />} 
+            />
+            <Route 
+              path="/login" 
+              element={!user ? <Login /> : <Navigate to="/" />} 
+            />
+            <Route 
+              path="/signup" 
+              element={!user ? <Signup /> : <Navigate to="/" />} 
+            />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </div>
-  )
-
+  );
 }
 
 export default App;
