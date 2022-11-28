@@ -22,5 +22,16 @@ const postCard = async (req, res) => {
     }
 }
 
+//Delete THEM CARDS
+const deleteCard = async (req, res) =>{
+    
+    
+    const id = req.params.id;
+  
+    Card.findByIdAndDelete(id)
+        .then(() => res.json({redirect: "/"} ))
+        .catch(err => res.status(400).json("error: " + err))
+}
+
 
 module.exports = {getCards, postCard}
