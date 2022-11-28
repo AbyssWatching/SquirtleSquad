@@ -10,6 +10,7 @@ h1,.logo{
 }
 a:link{
     text-decoration: none;
+    
 }
 .signup{
     text-align: center;
@@ -20,6 +21,7 @@ a:link{
 ul {
     list-style-type: none;
     min-width: 200px;
+    
 } 
 
 .btn1{
@@ -33,5 +35,12 @@ ul {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: skyblue;
     margin-left: 150px;
-
+    
 }
+
+a:hover {
+    color:yellow;
+    text-decoration: none;
+}
+
+
