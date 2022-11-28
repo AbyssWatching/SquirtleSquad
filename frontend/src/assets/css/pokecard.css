@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;1,700&family=Press+Start+2P&display=swap');
+
 .collectionpage {
     /* padding: 10%; */
     
@@ -18,6 +20,11 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Press Start 2P';
+}
+
+.logo:hover {
+    filter: hue-rotate(100deg);
 }
 
 .roll-button {
@@ -42,12 +49,15 @@
 }
 
 .card-container {
-    background-color: yellowgreen;
-    width: 160px;
-    height: 270px;
+    background-image: linear-gradient(#6d99ff, #0744d4);
+    width: auto;
+    max-width: 205px;
+    height: auto;
+    min-height: 310px;
     margin: 5px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
+    border: 6px solid yellow;
 }
 
 .background {
@@ -56,9 +66,15 @@
 
 .sprite {
     margin: auto;
-    width: 150px;
-    height: 150px;
+    height: 200px;
+    width: 200px;
+    max-height: 200px;
+    max-width: 200px;
     background-image: radial-gradient( white 10%, transparent 35%);
+}
+
+.content-container {
+    padding-bottom: fill;
 }
 
 .pokemon-name {
@@ -70,17 +86,22 @@
 }
 
 .pokemon-height, .pokemon-weight, .pokemon-type {
-    padding-left: 10px;
+    padding: 0 0 5px 5px;
 }
 
 .pokemon-type {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 700;
     letter-spacing: 1px;
     display: block;
+    padding-bottom: 10px;
+    /* background-color: #5578C9;
+    border-radius: 5px;
+    padding: 5px; */
 }
 
 .pokemon-height, .pokemon-weight {
-    font-size: 12px;
+    font-size: 11px;
     padding-left: 15px;
     letter-spacing: 1px;
     display: block;
@@ -91,16 +112,19 @@
     padding: 0 5px 0 5px;
     background-color: #E31010;
     color: white;
-    font-size: medium;
+    position: relative;
+    left: 77.5px;
+    bottom: 240px; 
+    height: 50px;
+    width: 50px;
     border: 2px solid black;
+    opacity: 0;
 }
 
 .delete-button:hover {
     background-color: #ff1717;
     color: #feffec;
     box-shadow: 1px 1px 5px black;
+    opacity: 1;
+    transition: ease-in 1s;
 }
-
-/* .App {
-    background-color: bisque;
-} */
