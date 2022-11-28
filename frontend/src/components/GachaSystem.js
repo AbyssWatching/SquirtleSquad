@@ -21,7 +21,7 @@ const GachaSystem = () => {
       const pokemonType1 = data.types[0].type.name;
       const pokemonType2 = data.types[1]?.type.name ?? null;
       const pokemonWeight = data.weight;
-      const pokemonHeight = data.weight;
+      const pokemonHeight = data.height;
       const pokemonImage = data.sprites.front_default;
       const card = {
           id: pokemonId,
@@ -52,7 +52,7 @@ const GachaSystem = () => {
     }
 
     return (
-      <button onClick={() => rollPokemon()}>Roll Pokemon</button>
+      <button className='roll-button' onClick={() => rollPokemon()}>Roll Pokemon</button>
     )
   } 
 

@@ -1,5 +1,6 @@
 import { useCardsContext } from '../hooks/useCardsContext'
 import { useAuthContext } from '../hooks/useAuthContext'
+import "../assets/css/pokecard.css"
 
 
 
@@ -26,10 +27,15 @@ const CardDetails = ({ card }) => {
   }
 
   return (
-    <div className="card-details">
-      <img url={card.img} alt='pokemon' />
-      <p>{card.name}</p>
-      <span className="" onClick={handleClick}>delete</span>
+    <div className='card-collection'>
+    <div className="card-container">
+      <img className='sprite' src={card.image} alt='pokemon' />
+      <h1 className='pokemon-name'>{card.name}</h1>
+      <p className='pokemon-type'>Types: {card.type1} {card.type2}</p>
+      <p className='pokemon-height'>Height: {card.height} dm</p>
+      <p className='pokemon-weight'>Weight: {card.weight} hg</p>
+    </div>
+    <button className="delete-button" onClick={handleClick}>delete</button>
     </div>
   )
 }
