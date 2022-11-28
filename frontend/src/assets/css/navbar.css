@@ -2,13 +2,13 @@ h1,.logo{
     text-align: center;
 
 }
-.login{
+.loginnav{
     text-align: center;
-}
-Link{
-    margin: 5rem;
+    font-size: 200%;
+
 }
 
-.nav{
-    color:white
+.signup{
+    text-align: center;
+    font-size: 200%;
 }
