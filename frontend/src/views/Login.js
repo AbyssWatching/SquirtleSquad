@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useLogin } from "../hooks/useLogin"
 import background from '../assets/images/background.png'
-
+import "../assets/css/style.css"
 
 const Login = () => {
   const [email, setEmail] = useState('')
