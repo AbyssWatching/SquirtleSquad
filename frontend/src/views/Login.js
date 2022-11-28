@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { useLogin } from "../hooks/useLogin"
+import background from '../assets/images/background.png'
+
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -13,6 +15,8 @@ const Login = () => {
   }
 
   return (
+    <div>
+    <img className='background' src={background} alt='pokecha logo'></img>
     <form className="login" onSubmit={handleSubmit}>
       <h3>Log In</h3>
       
@@ -32,6 +36,7 @@ const Login = () => {
       <button disabled={isLoading}>Log in</button>
       {error && <div className="error">{error}</div>}
     </form>
+    </div>
   )
 }
 

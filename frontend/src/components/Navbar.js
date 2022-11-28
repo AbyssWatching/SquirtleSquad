@@ -3,6 +3,7 @@ import { useLogout } from '../hooks/useLogout'
 import { useAuthContext } from '../hooks/useAuthContext'
 import logo from '../assets/images/pokecha-logo.png'
 
+
 const Navbar = () => {
   const { logout } = useLogout()
   const { user } = useAuthContext()
