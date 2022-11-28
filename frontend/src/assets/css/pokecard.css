@@ -29,14 +29,14 @@
 }
 
 .card-collection {
-    display: inline-flex;
+    display: inline-block;
     flex-wrap: wrap;
 }
 
 .card-container {
     background-color: yellowgreen;
-    width: 200px;
-    height: 250px;
+    width: 160px;
+    height: 270px;
     margin: 5px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
@@ -50,6 +50,7 @@
     align-items: center;
     width: 150px;
     height: 150px;
+    background-image: radial-gradient( white 1%, transparent 30%);
 }
 
 .pokemon-name {
@@ -60,6 +61,10 @@
     display: block;
 }
 
+.pokemon-height, .pokemon-weight, .pokemon-type {
+    padding-left: 10px;
+}
+
 .pokemon-type {
     font-size: 14px;
     letter-spacing: 1px;
@@ -68,11 +73,16 @@
 
 .pokemon-height, .pokemon-weight {
     font-size: 12px;
+    padding-left: 15px;
     letter-spacing: 1px;
     display: block;
 }
 
 .delete-button {
-    justify-content: last baseline;
-    background-color: #5578C9;
+    text-align: center;
+    padding: 0 5px 0 5px;
+    background-color: #E31010;
+    color: white;
+    font-size: medium;
+    border: 2px solid black;
 }
