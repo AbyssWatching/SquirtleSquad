@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useLogout } from '../hooks/useLogout'
 import { useAuthContext } from '../hooks/useAuthContext'
 import logo from '../assets/images/pokecha-logo.png'
-
+import "../assets/css/navbar.css"
 
 const Navbar = () => {
   const { logout } = useLogout()
@@ -30,8 +30,12 @@ const Navbar = () => {
           )}
           {!user && (
             <div>
+              <ul className='login'>
               <Link to="/login">Login</Link>
+              </ul>
+              <ul className='signup'>
               <Link to="/signup">Signup</Link>
+              </ul>
             </div>
           )}
         </nav>
