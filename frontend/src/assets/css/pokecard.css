@@ -112,16 +112,19 @@
     padding: 0 5px 0 5px;
     background-color: #E31010;
     color: white;
-    font-size: medium;
+    position: relative;
+    left: 77.5px;
+    bottom: 240px; 
+    height: 50px;
+    width: 50px;
     border: 2px solid black;
+    opacity: 0;
 }
 
 .delete-button:hover {
     background-color: #ff1717;
     color: #feffec;
     box-shadow: 1px 1px 5px black;
-}
-
-.App {
-    
+    opacity: 1;
+    transition: ease-in 1s;
 }
