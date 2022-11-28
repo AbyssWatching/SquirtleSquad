@@ -30,10 +30,12 @@ const CardDetails = ({ card }) => {
     <div className='card-collection'>
     <div className="card-container">
       <img className='sprite' src={card.image} alt='pokemon' />
-      <h1 className='pokemon-name'>{card.name}</h1>
-      <p className='pokemon-type'>Types: {card.type1} {card.type2}</p>
-      <p className='pokemon-height'>Height: {card.height} dm</p>
-      <p className='pokemon-weight'>Weight: {card.weight} hg</p>
+      <div className='content-container'>
+        <h1 className='pokemon-name'>{card.name}</h1>
+        <p className='pokemon-type'>Types: {card.type1} {card.type2}</p>
+        <p className='pokemon-height'>Height: {card.height} dm</p>
+        <p className='pokemon-weight'>Weight: {card.weight} hg</p>
+      </div>
     </div>
     <button className="delete-button" onClick={handleClick}>delete</button>
     </div>

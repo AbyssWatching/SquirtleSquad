@@ -20,6 +20,10 @@
     padding: 0px;
 }
 
+.logo:hover {
+    filter: hue-rotate(100deg);
+}
+
 .roll-button {
     padding: 8px;
     font-size: large;
@@ -42,12 +46,13 @@
 }
 
 .card-container {
-    background-color: yellowgreen;
-    width: 160px;
-    height: 270px;
+    background-color: #658EEB;
+    width: 205px;
+    height: auto;
     margin: 5px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
+    border: 6px solid yellow;
 }
 
 .background {
@@ -56,9 +61,14 @@
 
 .sprite {
     margin: auto;
-    width: 150px;
-    height: 150px;
+    height: 200px;
+    width: auto;
     background-image: radial-gradient( white 10%, transparent 35%);
+}
+
+.content-container {
+    background-color: #5578C9;
+    margin-bottom: 3px;
 }
 
 .pokemon-name {
@@ -74,13 +84,17 @@
 }
 
 .pokemon-type {
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 700;
     letter-spacing: 1px;
     display: block;
+    /* background-color: #5578C9;
+    border-radius: 5px;
+    padding: 5px; */
 }
 
 .pokemon-height, .pokemon-weight {
-    font-size: 12px;
+    font-size: 16px;
     padding-left: 15px;
     letter-spacing: 1px;
     display: block;
