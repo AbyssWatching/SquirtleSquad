@@ -30,11 +30,12 @@ const Home = () => {
   return (
     <div className="home">
       <div className="cards">
+        <GachaSystem />
+        <br></br>
         {cards && cards.map((card) => (
           <CardDetails key={card.id} card={card} />
         ))}
       </div>
-      <GachaSystem />
     </div>
   )
 }

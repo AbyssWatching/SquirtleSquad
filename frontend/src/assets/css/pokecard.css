@@ -28,7 +28,12 @@
     border-color: #5578C9;
 }
 
-.pokecard-container {
+.card-collection {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.card-container {
     background-color: yellowgreen;
     width: 200px;
     height: 250px;
@@ -52,14 +57,22 @@
     font-size: 18px;
     font-weight: lighter;
     padding: 10px;
+    display: block;
 }
 
 .pokemon-type {
     font-size: 14px;
     letter-spacing: 1px;
+    display: block;
 }
 
 .pokemon-height, .pokemon-weight {
     font-size: 12px;
     letter-spacing: 1px;
+    display: block;
+}
+
+.delete-button {
+    justify-content: last baseline;
+    background-color: #5578C9;
 }
