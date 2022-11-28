@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Collection from './pages/Collection' ;
-import './assets/styles.css';
+import Styles from './index.css' ;
 
 
 
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-     
+      <Styles/>
        <Navbar />
       <h1>{ title }</h1>
       <Home/>
