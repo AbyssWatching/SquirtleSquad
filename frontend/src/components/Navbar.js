@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useLogout } from '../hooks/useLogout'
 import { useAuthContext } from '../hooks/useAuthContext'
+import logo from '../assets/images/pokecha-logo.png'
 
 const Navbar = () => {
   const { logout } = useLogout()
@@ -14,7 +15,10 @@ const Navbar = () => {
     <header>
       <div className="container">
         <Link to="/">
-          <h1>PokeCha</h1>
+          <h1>
+            <img className='logo' src={logo} alt='pokecha logo'></img>
+          </h1>
+          
         </Link>
         <nav>
           {user && (
