@@ -29,9 +29,9 @@ const Signup = () => {
           onChange={(e) => setEmail(e.target.value)} 
           value={email} 
           />
-          <label>Password:</label>
+          <label><img src={password_icon} alt="password" className="pass"/></label>
           <input 
-          type="password" 
+          type="password" placeholder="Password"
           onChange={(e) => setPassword(e.target.value)} 
           value={password} 
           />
