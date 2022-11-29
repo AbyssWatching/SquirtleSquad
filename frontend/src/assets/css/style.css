@@ -11,6 +11,7 @@ h3{
     margin: 5%;
     margin-left: calc(33vw/10);
    text-align: center;
+   margin-left: calc(10vw/10);
 }
 
 .email{  
@@ -33,6 +34,9 @@ h3{
     border-radius: 20%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 1px;
+    font-size: calc(8vw/10);
+    width: calc(125vw/10);
+    
 }
 
 .main{
@@ -56,18 +60,19 @@ h3{
     height: 50px;
     width: 50px;
     position: relative;
-   margin-top: 10px;
+   
 }
 
 .pass{
     height: 50px;
     width: 50px;
     position: relative;
-    margin-top: 10px;
+   
 }
 
 .emailbox,.passbox{
         margin: 1vh;
         position: relative;
+        
 }
 
