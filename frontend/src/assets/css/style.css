@@ -15,7 +15,9 @@ h3{
 
 .email{
     background-color:rgb(70, 101, 206);
-    padding: 1.1vh;
+
+    width: 300px;
+    height: 50px;
 }
 
 .password{
@@ -43,4 +45,8 @@ h3{
     box-shadow: 11px 12px 13px 12px rgb(218, 218, 49);
     background-color: rgb(70, 101, 206);
     border-radius: 15%;
+}
+
+.icon{
+    ;
 }
