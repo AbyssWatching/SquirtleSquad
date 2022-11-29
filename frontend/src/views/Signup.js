@@ -34,16 +34,16 @@ const Signup = () => {
 
           </div>
 
-            <div className="passbox"></div>
+            <div className="passbox">
             <label><img src={password_icon} alt="password" className="pass"/></label>
             <input 
             type="password" placeholder="Password"
             onChange={(e) => setPassword(e.target.value)} 
             value={password} 
             />
+         
           </div>
-
-         <button disabled={isLoading}>Sign up</button>
+         <button className="logbtn" disabled={isLoading}>Sign up</button>
          {error && <div className="error">{error}</div>}
         </form>
       </div>
