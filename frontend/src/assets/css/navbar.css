@@ -1,0 +1,63 @@
+h1,.logo{
+    text-align: center;
+    min-width: 25%;
+
+}
+.login{
+    text-align: center;
+    font-size: 200%;
+    
+}
+a:link{
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing:2.3px;
+    
+}
+.signup{
+    text-align: center;
+    font-size: 200%;
+    
+}
+
+ul {
+    list-style-type: none;
+    min-width: 200px;
+    
+} 
+
+.btn1{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: transparent;
+    background-position: 5rem;
+    margin-left: calc(405vw/10);
+}
+
+.btn2{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: transparent;
+    margin-left: calc(50vw/10);
+    
+}
+
+.btn1:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(70, 101, 206);
+    background-position: 5rem;
+    margin-left: calc(405vw/10);
+    border-color: rgb(218, 218, 49);
+}
+
+.btn2:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(70, 101, 206);
+    margin-left: calc(50vw/10);
+   border-color: rgb(218, 218, 49);
+}
+
+a:hover {
+    color:yellow;
+    text-decoration: none;
+}
+
+
