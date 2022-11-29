@@ -14,29 +14,35 @@ h3{
    margin-left: calc(10vw/10);
 }
 
+:hover,h3{
+    color:rgb(218, 218, 49);
+    text-decoration: none;
+    opacity: 1;
+    transition: ease-in .5s;
+}
+
 .email{  
-    background-color:rgb(70, 101, 206);
-    width: 300px;
-    height: 50px;
+    background-color:white;
+    padding: 1.3vh;
     
 }
 
 .password{
-    background-color:rgb(70, 101, 206);
-    padding: 1.1vh;
+    background-color:white;
+    padding: 1.3vh;
 }
 
 .logbtn{
     padding: 1.2vh;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color:red;
-    margin-left: calc(10vw/10);
+    margin-left: calc(20vw/10);
     border-radius: 20%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 1px;
     font-size: calc(8vw/10);
     width: calc(125vw/10);
-    
+    color:blue
 }
 
 .main{
