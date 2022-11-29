@@ -47,12 +47,10 @@ h3{
 
 .logbtn:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    color: rgb(70, 101, 206);
+    color: rgb(218, 218, 49);
    opacity: 1;
-   transition: ease-in .5s;
+   transition: ease-in .35s;
 }
-
-
 
 .main{
     text-align: center;
