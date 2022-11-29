@@ -47,6 +47,8 @@ h3{
 }
 
 .email_icon{
-    
-    ;
+    height: 55px;
+    width: 55px;
+    position: relative;
+
 }
