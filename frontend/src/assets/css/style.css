@@ -1,14 +1,8 @@
  body{
-background-image: url(../images/background3.png);
-background-size: cover;
-width: 100% ;
-height: 100vh ;
-overflow: static ;
+    background-image: url(../images/background3.png);
+    background-size: cover;
+    width: 100% ;
+    height: 100vh ;
+    background-position: static;
 } 
 
-h3{
-    color: yellow;
-    margin: 1%;
-    margin-left: calc(33vw/10);
-   
-}
