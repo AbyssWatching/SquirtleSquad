@@ -8,15 +8,16 @@ overflow: static ;
 
 h3{
     color:rgb(218, 218, 49);
-    margin: 1%;
+    margin: 5%;
     margin-left: calc(33vw/10);
-   
+   text-align: center;
 }
 
 .email{  
     background-color:rgb(70, 101, 206);
     width: 300px;
     height: 50px;
+    
 }
 
 .password{
@@ -39,8 +40,8 @@ h3{
 .main1{
     display: flex;
     justify-content: center;
-    height: 350px;
-    width: 35%;
+    height: 325px;
+    width: 20%;
     box-shadow: 11px 12px 13px 12px rgb(218, 218, 49);
     background-color: rgb(70, 101, 206);
     border-radius: 15%;
@@ -58,3 +59,9 @@ h3{
     width: 50px;
     position: relative;
 }
+
+.emailbox,.passbox{
+        margin: 1vh;
+        position: relative;
+}
+
