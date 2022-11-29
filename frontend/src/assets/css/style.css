@@ -27,7 +27,12 @@ h3{
 
 .logbtn{
     padding: 1.2vh;
-    background-color:wheat;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color:red;
+    margin-left: calc(10vw/10);
+    border-radius: 20%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
 }
 
 .main{
@@ -51,13 +56,14 @@ h3{
     height: 50px;
     width: 50px;
     position: relative;
-    
+   margin-top: 10px;
 }
 
 .pass{
     height: 50px;
     width: 50px;
     position: relative;
+    margin-top: 10px;
 }
 
 .emailbox,.passbox{
