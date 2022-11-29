@@ -12,7 +12,7 @@ a:link{
     text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing:2.3px;
-    
+
 }
 .signup{
     text-align: center;
@@ -46,6 +46,8 @@ ul {
     background-position: 5rem;
     margin-left: calc(405vw/10);
     border-color: rgb(218, 218, 49);
+    opacity: 1;
+    transition: ease-in .5s;
 }
 
 .btn2:hover{
@@ -53,11 +55,15 @@ ul {
     background-color: rgb(70, 101, 206);
     margin-left: calc(50vw/10);
    border-color: rgb(218, 218, 49);
+   opacity: 1;
+   transition: ease-in .5s;
 }
 
 a:hover {
-    color:yellow;
+    color:rgb(218, 218, 49);
     text-decoration: none;
+    opacity: 1;
+    transition: ease-in .5s;
 }
 
 

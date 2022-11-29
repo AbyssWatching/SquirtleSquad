@@ -7,8 +7,18 @@ overflow: static ;
 } 
 
 h3{
-    color: yellow;
+    color:rgb(218, 218, 49);
     margin: 1%;
     margin-left: calc(33vw/10);
    
+}
+
+.email{
+    font-size: 1.8vh;
+    background-color:rgb(70, 101, 206);
+}
+
+.password{
+    font-size: 1.8vh;
+    background-color:rgb(70, 101, 206);
 }

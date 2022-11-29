@@ -19,15 +19,17 @@ const Login = () => {
 
     <form className="login" onSubmit={handleSubmit}>
       <h3>Log In</h3>
-      
+      <ul>
       <label>Email address:</label>
-      <input 
+      
+      <input className="email"
         type="email" 
         onChange={(e) => setEmail(e.target.value)} 
         value={email} 
       />
+      </ul>
       <label>Password:</label>
-      <input 
+      <input className="password"
         type="password" 
         onChange={(e) => setPassword(e.target.value)} 
         value={password} 
