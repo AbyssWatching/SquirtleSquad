@@ -21,5 +21,24 @@ const postCard = async (req, res) => {
     }
 }
 
+//Delete THEM CARDS
+const deleteCard = async (req, res) => {
+    
+    
+    const { id }  = req.params
 
-module.exports = {getCards, postCard}
+     if (!mongoose.Types.ObjectId.isValid(id)) {
+        return res.status(404).json({error: 'Hit here'})
+     }
+
+    const card = await Card.findOneAndDelete({_id: id})
+
+    if (!card) {
+        return res.status(400).json({error: 'No such card exists'})
+    }
+
+    res.status(200).json(card)
+}
+
+
+module.exports = {getCards, postCard, deleteCard}
