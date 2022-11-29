@@ -1,5 +1,8 @@
 import { useState } from "react"
 import { useSignup } from "../hooks/useSignup"
+import email_icon from "../assets/images/email_icon.png"
+import password_icon from "../assets/images/pass.png"
+
 
 const Signup = () => {
   const [email, setEmail] = useState('')
