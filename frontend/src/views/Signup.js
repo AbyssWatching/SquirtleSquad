@@ -23,9 +23,9 @@ const Signup = () => {
           <form className="signup" onSubmit={handleSubmit}>
           <h3>Sign Up</h3>
       
-          <label>Email address:</label>
+          <label><img src={email_icon} alt="email" className="email_icon"/></label>
           <input 
-          type="email" 
+          type="email" placeholder="Email"
           onChange={(e) => setEmail(e.target.value)} 
           value={email} 
           />
