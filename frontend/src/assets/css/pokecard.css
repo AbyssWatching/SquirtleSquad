@@ -17,21 +17,9 @@
 }
 
 .collectionpage {
-    /* padding: 10%; */
-    
     display: inline-flex;
     flex-wrap: wrap;
 }
-
-/* .pokecard {
-    padding: 50px;
-    margin: 50px 10px 10px 50px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px;
-    height: 300px;
-    width: 200px;
-    background-color: bisque;
-} */ 
 
 * {
     font-family: 'Press Start 2P';
@@ -67,10 +55,8 @@
 
 .card-container {
     background-image: linear-gradient(#6d99ff, #0744d4);
-    width: auto;
-    max-width: 205px;
-    height: auto;
-    min-height: 315px;
+    width: 205px;
+    height: 370px;
     margin: 5px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
@@ -119,10 +105,9 @@
     letter-spacing: 1px;
     color: yellow;
     display: block;
-    padding-bottom: 10px;
     background-color: #5a78dc;
     border-radius: 5px;
-    padding: 5px;
+    padding: 7px;
     position: relative;
     bottom: 17px;
     line-height: 1.3;
@@ -148,12 +133,12 @@
     background-color: #E31010;
     color: white;
     position: relative;
-    left: 160px;
-    bottom: 326px; 
+    left: 167px;
+    bottom: 381px; 
     height: 50px;
     width: 50px;
     border: 2px solid black;
-    opacity: 0;
+    opacity: 0.03;
 }
 
 .delete-button:hover {
