@@ -26,7 +26,7 @@ const Signup = () => {
           <div className="emailbox">
 
             <label><img src={email_icon} alt="email" className="email_icon"/></label>
-            <input 
+            <input className="email"
             type="email" placeholder="Email"
             onChange={(e) => setEmail(e.target.value)} 
             value={email} 
@@ -36,7 +36,7 @@ const Signup = () => {
 
             <div className="passbox">
             <label><img src={password_icon} alt="password" className="pass"/></label>
-            <input 
+            <input className="password"
             type="password" placeholder="Password"
             onChange={(e) => setPassword(e.target.value)} 
             value={password} 
