@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useLogin } from "../hooks/useLogin"
 import "../assets/css/style.css"
 import email_icon from "../assets/images/email_icon.png"
-import password from "../assets/images/pass.png"
+import password_icon from "../assets/images/pass.png"
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -30,7 +30,7 @@ const Login = () => {
         value={email} 
         />
      
-        <label><img src={password} alt="password" className="pass"/></label>
+        <label><img src={password_icon} alt="password" className="pass"/></label>
         <input className="password"
         type="password" placeholder="Password"
         onChange={(e) => setPassword(e.target.value)} 
