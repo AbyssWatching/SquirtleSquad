@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken')
 const User = require('../models/userModel')
+const ObjectId = require('mongoose').Types.ObjectId
 
 const requireAuth = async (req, res, next) => {
     // CHECK IF USER IS AUTHENTICATED
@@ -12,7 +13,7 @@ const requireAuth = async (req, res, next) => {
     const token = authorization.split(' ')[1];
 
     try {
-        const { id } = jwt.verify(token, process.env.SECRET)
+        const id  = new ObjectId(jwt.verify(token, process.env.SECRET))
 
         req.user = await User.findOne({ id }).select('id')
         next()
