@@ -33,7 +33,7 @@ const Home = () => {
         <GachaSystem />
         <br></br>
         {cards && cards.map((card) => (
-          <CardDetails key={card.id} card={card} />
+          <CardDetails key={card._id} card={card} />
         ))}
       </div>
     </div>

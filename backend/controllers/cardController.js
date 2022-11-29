@@ -9,9 +9,13 @@ const getCards = async (req, res) => {
     res.status(200).json(cards)
   }
 // ADD NEW CARD TO COLLECTION
+
+
+
+
 const postCard = async (req, res) => {
     const {id, name, type1, type2, weight, height, image} = req.body
-
+    // request.connection.setTimeout(1000 * 60 * 30);
     try {
         const user_id = req.user.id
         const card = await Card.create({id, name, type1, type2, weight, height, image, user_id})
