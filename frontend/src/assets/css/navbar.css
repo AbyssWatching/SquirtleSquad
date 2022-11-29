@@ -46,8 +46,6 @@ ul {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: rgb(70, 101, 206);
     background-position: 5rem;
-    margin-left: calc(405vw/10);
-    border-color: rgb(218, 218, 49);
     opacity: 1;
     transition: ease-in .5s;
 }
@@ -56,7 +54,6 @@ ul {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: rgb(70, 101, 206);
     margin-left: calc(50vw/10);
-   border-color: rgb(218, 218, 49);
    opacity: 1;
    transition: ease-in .5s;
 }
