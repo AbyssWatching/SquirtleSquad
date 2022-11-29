@@ -1,10 +1,9 @@
 const Card = require('../models/cardModel')
 const mongoose = require('mongoose')
-
+const jwt = require('jsonwebtoken')
 // GET ALL CARDS IN COLLECTION
 const getCards = async (req, res) => {
     const user_id = req.user.id
-  
     const cards = await Card.find({user_id}).sort({createdAt: -1})
   
     res.status(200).json(cards)
