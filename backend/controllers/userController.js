@@ -11,14 +11,17 @@ const loginUser = async (req, res) => {
 
   try {
     const user = await User.login(email, password)
-
+    const user_id = user.id
+    console.log(user_id)
     // CREATE TOKEN
     const token = createToken(user.id)
+    
 
     res.status(200).json({email, token})
   } catch (error) {
     res.status(400).json({error: error.message})
   }
+
 }
 
 // SIGNUP
@@ -36,5 +39,7 @@ const signupUser = async (req, res) => {
     res.status(400).json({error: error.message})
   }
 }
+
+
 
 module.exports = { signupUser, loginUser }
