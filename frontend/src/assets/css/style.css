@@ -13,9 +13,8 @@ h3{
    
 }
 
-.email{
+.email{  
     background-color:rgb(70, 101, 206);
-
     width: 300px;
     height: 50px;
 }
@@ -47,6 +46,7 @@ h3{
     border-radius: 15%;
 }
 
-.icon{
+.email_icon{
+    
     ;
 }

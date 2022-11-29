@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { useLogin } from "../hooks/useLogin"
 import "../assets/css/style.css"
+import email_icon from "../assets/images/email_icon.png"
+
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -21,9 +23,9 @@ const Login = () => {
         <form className="login" onSubmit={handleSubmit}>
           <h3>Log In</h3>
       
-        <label className="icon">Email address:</label>
+        <label ><img src={email_icon} alt="email" className="email_icon"/></label>
         <input className="email"
-        type="email" 
+        type="email" placeholder="Email"
         onChange={(e) => setEmail(e.target.value)} 
         value={email} 
         />
