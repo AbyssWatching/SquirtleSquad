@@ -27,3 +27,20 @@ h3{
     padding: 1.2vh;
     background-color: black;
 }
+
+.main{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 90px 0 90px 0;
+}
+
+.main1{
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    width: 35%;
+    box-shadow: 11px 12px 13px 12px rgb(218, 218, 49);
+    background-color: rgb(70, 101, 206);
+    
+}
