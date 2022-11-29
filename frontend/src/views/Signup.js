@@ -22,19 +22,26 @@ const Signup = () => {
     
           <form className="signup" onSubmit={handleSubmit}>
           <h3>Sign Up</h3>
-      
-          <label><img src={email_icon} alt="email" className="email_icon"/></label>
-          <input 
-          type="email" placeholder="Email"
-          onChange={(e) => setEmail(e.target.value)} 
-          value={email} 
+          
+          <div className="emailbox">
+
+            <label><img src={email_icon} alt="email" className="email_icon"/></label>
+            <input 
+            type="email" placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)} 
+            value={email} 
           />
-          <label><img src={password_icon} alt="password" className="pass"/></label>
-          <input 
-          type="password" placeholder="Password"
-          onChange={(e) => setPassword(e.target.value)} 
-          value={password} 
-          />
+
+          </div>
+
+            <div className="passbox"></div>
+            <label><img src={password_icon} alt="password" className="pass"/></label>
+            <input 
+            type="password" placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)} 
+            value={password} 
+            />
+          </div>
 
          <button disabled={isLoading}>Sign up</button>
          {error && <div className="error">{error}</div>}
