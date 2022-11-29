@@ -14,11 +14,16 @@ h3{
 }
 
 .email{
-    font-size: 1.8vh;
     background-color:rgb(70, 101, 206);
+    padding: 1.1vh;
 }
 
 .password{
-    font-size: 1.8vh;
     background-color:rgb(70, 101, 206);
+    padding: 1.1vh;
+}
+
+.logbtn{
+    padding: 1.2vh;
+    background-color: black;
 }
