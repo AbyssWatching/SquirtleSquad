@@ -1,4 +1,5 @@
-
+import play_button from "../assets/images/play_button.png"
+import stop_button from "../assets/images/stop_button.png"
 const AudioPlayer = () => {
 
     function playPokemonCenterMusic() {
@@ -18,10 +19,10 @@ const AudioPlayer = () => {
     return (
         <div>
             <div>
-                <button className="playbtn" onClick={playPokemonCenterMusic()}>Play</button>
+                <button className="playbtn" onClick={playPokemonCenterMusic()}>{play_button}</button>
             </div>
             <div>
-                <button className="stopbtn" onClick={stopPokemonCenterMusic()}>Stop</button>
+                <button className="stopbtn" onClick={stopPokemonCenterMusic()}>{stop_button}</button>
             </div>
         </div>
     )
