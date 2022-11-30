@@ -14,8 +14,8 @@ const getCards = async (req, res) => {
 const postCard = async (req, res) => {
     const {id, name, type1, type2, weight, height, image} = req.body
     try {
-        const favorite = null
         const user_id = req.user.id
+        const favorite = false
         const card = await Card.create({id, name, type1, type2, weight, height, image, user_id, favorite})
         res.status(200).json(card)
     } catch (err) {
