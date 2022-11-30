@@ -15,6 +15,6 @@ router.post('/', postCard)
 
 router.delete('/:id', deleteCard)
 
-// router.put('/:id', favoriteCard)
+router.patch('/:id', favoriteCard)
 
 module.exports = router
