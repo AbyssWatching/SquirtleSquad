@@ -21,7 +21,7 @@ yellow red circles to resemble pokedex */
 }
 
 .cards {
-    background-color: whitesmoke;
+    background-image: linear-gradient(rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
     padding: 20px;
     margin: 20px;
     border-radius: 5px;
@@ -62,6 +62,10 @@ yellow red circles to resemble pokedex */
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
     border: 6px solid yellow;
+}
+
+.card-container:hover {
+    box-shadow: 1px 1px 5px white;
 }
 
 .sprite {
