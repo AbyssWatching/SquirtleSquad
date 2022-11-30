@@ -39,6 +39,8 @@ yellow red circles to resemble pokedex */
     position: relative;
     left: 200px;
     margin: 5px 0 5px 0;
+    transition: ease-in .35s;
+    animation: blink .5s infinite
 }
 
 .roll-button:hover {
