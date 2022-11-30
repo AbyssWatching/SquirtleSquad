@@ -1,23 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;1,700&family=Press+Start+2P&display=swap');
 
-/* Add blue lenses to pokedex border and green, 
-yellow red circles to resemble pokedex */
-/* change log out to X and put on the right */
-
-
 * {
     font-family: 'Press Start 2P';
 }
 
-.logo:hover {
-    filter: hue-rotate(100deg);
-}
-
 .home {
-    background-color: #e44141;
+    background-color: rgb(228, 65, 65);
     padding: 20px;
     border: 5px solid black;
-    border-radius: 3px;
 }
 
 .cards {
@@ -30,24 +20,6 @@ yellow red circles to resemble pokedex */
     border-bottom-left-radius: 100px;
 }
 
-.roll-button {
-    padding: 8px;
-    font-size: large;
-    background-color: #658EEB;
-    color: yellow;
-    border-color: #5578C9;
-    margin: auto;
-    position: relative;
-    left: 200px;
-    margin: 5px 0 5px 0;
-}
-
-.roll-button:hover {
-    background-color: #5578C9;
-    color: white;
-    border-color: #5578C9;
-    box-shadow: 1px 1px 15px yellow;
-}
 
 .card-collection {
     display: inline-block;
@@ -67,6 +39,7 @@ yellow red circles to resemble pokedex */
 .sprite {
     margin: auto;
     height: 200px;
+    /* width: 200px; */
     max-height: 200px;
     max-width: 200px;
     position: relative;
@@ -76,6 +49,7 @@ yellow red circles to resemble pokedex */
 
 .content-container {
     height: 190px;
+    /* padding-bottom: auto; */
 }
 
 .pokemon-name {
@@ -108,6 +82,7 @@ yellow red circles to resemble pokedex */
     line-height: 1.3;
     margin-left: 10px;
     margin-right: 10px;
+    /* margin-bottom: auto; */
     box-shadow: 0 0 3px rgb(158, 158, 158);
 }
 
@@ -122,16 +97,16 @@ yellow red circles to resemble pokedex */
     font-size: 11px;
     padding-left: 15px;
     letter-spacing: 1px;
+    /* display: block; */
 }
 
 .delete-button {
     text-align: center;
-    font-size: 25px;
     padding: 0 5px 0 5px;
     background-color: #E31010;
     color: white;
     position: relative;
-    left: 165px;
+    left: 167px;
     bottom: 400px; 
     height: 50px;
     width: 50px;
@@ -140,7 +115,7 @@ yellow red circles to resemble pokedex */
 }
 
 .delete-button:hover {
-    background-color: #e44141;
+    background-color: #ff1717;
     color: #feffec;
     box-shadow: 1px 1px 5px black;
     opacity: 1;

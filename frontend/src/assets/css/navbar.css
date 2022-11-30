@@ -60,4 +60,12 @@ a:hover {
     text-decoration: none;
 }
 
+.logout-button {
+    background-color: aliceblue;
+    font-size: 20px;
+}
+
+.logout-button:hover {
+    background-color: #e44141;
+}
 

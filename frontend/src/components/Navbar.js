@@ -25,7 +25,7 @@ const Navbar = () => {
           {user && (
             <div>
               <span>{user.email}'s Pokedex</span>
-              <button onClick={handleClick}>Log out</button>
+              <button className='logout-button' onClick={handleClick}><i class="fa fa-close"></i></button>
             </div>
           )}
           {!user && (

@@ -1,6 +1,7 @@
 import { useEffect }from 'react'
 import { useCardsContext } from "../hooks/useCardsContext"
 import { useAuthContext } from "../hooks/useAuthContext"
+import "../assets/css/pokedex.css"
 
 // components
 import CardDetails from '../components/CardDetails'
@@ -29,6 +30,12 @@ const Home = () => {
 
   return (
     <div className="home">
+      <div className='pokedex-top-container'>
+      <div className='lens-blue'>
+        <div className='lens-shine'></div>
+      </div>
+        <div className='light-container'><div className='light-red'></div><div className='light-yellow'></div><div className='light-green'></div></div>
+        </div>
       <div className="cards">
         <GachaSystem />
         <br></br>
