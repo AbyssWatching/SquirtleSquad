@@ -1,4 +1,3 @@
-// const axios = require('axios')
 import { useAuthContext } from '../hooks/useAuthContext'
 import { useCardsContext } from '../hooks/useCardsContext'
 
