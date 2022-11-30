@@ -1,30 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;1,700&family=Press+Start+2P&display=swap');
 
-.collectionpage {
-    /* padding: 10%; */
-    
-    display: inline-flex;
-    flex-wrap: wrap;
-}
+/* Add blue lenses to pokedex border and green, 
+yellow red circles to resemble pokedex */
+/* change log out to X and put on the right */
 
-/* .pokecard {
-    padding: 50px;
-    margin: 50px 10px 10px 50px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px;
-    height: 300px;
-    width: 200px;
-    background-color: bisque;
-} */ 
 
 * {
-    margin: 0px;
-    padding: 0px;
     font-family: 'Press Start 2P';
 }
 
 .logo:hover {
     filter: hue-rotate(100deg);
+}
+
+.home {
+    background-color: rgb(228, 65, 65);
+    padding: 20px;
+    border: 5px solid black;
+}
+
+.cards {
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 5px solid black;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
 }
 
 .roll-button {
@@ -53,31 +55,26 @@
 
 .card-container {
     background-image: linear-gradient(#6d99ff, #0744d4);
-    width: auto;
-    max-width: 205px;
-    height: auto;
-    min-height: 315px;
+    width: 205px;
+    height: 390px;
     margin: 5px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
     border: 6px solid yellow;
 }
 
-.background {
-    text-align: center;
-}
-
 .sprite {
     margin: auto;
     height: 200px;
-    width: 200px;
     max-height: 200px;
     max-width: 200px;
-    background: radial-gradient(circle at 50%, #8aaaf6 1%, transparent 80%);
+    position: relative;
+    top: 40px;
+    background: radial-gradient(circle at 50%, #8aaaf6 1%, transparent 69%);
 }
 
 .content-container {
-    padding-bottom: fill;
+    height: 190px;
 }
 
 .pokemon-name {
@@ -85,43 +82,46 @@
     font-size: 18px;
     font-weight: lighter;
     padding: 10px;
-    display: block;
+    height: 25px;
     position: relative;
-    bottom: 20px;
-}
-
-.pokemon-height, .pokemon-weight, .pokemon-type {
-    padding: 0 0 5px 5px;
+    bottom: 210px;
+    overflow: hidden;
+    color: white;
+    letter-spacing: 1.5px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
 .pokemon-type {
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
     font-weight: 700;
     letter-spacing: 1px;
     color: yellow;
-    display: block;
-    padding-bottom: 10px;
     background-color: #5a78dc;
     border-radius: 5px;
-    padding: 5px;
+    vertical-align: middle;
+    height: 15px;
+    padding: 5px 0 5px 0;
     position: relative;
-    bottom: 17px;
+    bottom: 20px;
     line-height: 1.3;
     margin-left: 10px;
-    margin-right: 20px;
+    margin-right: 10px;
+    box-shadow: 0 0 3px rgb(158, 158, 158);
+}
+
+.pokemon-id {
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+    bottom: 20px;
 }
 
 .pokemon-height, .pokemon-weight {
     font-size: 11px;
     padding-left: 15px;
     letter-spacing: 1px;
-    display: block;
-    position: relative;
-}
-
-.pokemon-weight {
-    margin-bottom: 5px;
+    /* display: block; */
 }
 
 .delete-button {
@@ -130,12 +130,12 @@
     background-color: #E31010;
     color: white;
     position: relative;
-    left: 77.5px;
-    bottom: 240px; 
+    left: 167px;
+    bottom: 400px; 
     height: 50px;
     width: 50px;
     border: 2px solid black;
-    opacity: 0;
+    opacity: 0.03;
 }
 
 .delete-button:hover {
@@ -143,6 +143,5 @@
     color: #feffec;
     box-shadow: 1px 1px 5px black;
     opacity: 1;
-    transition: ease-in 1s;
+    transition: ease-in .5s;
 }
-

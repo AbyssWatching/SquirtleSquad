@@ -24,7 +24,7 @@ const Navbar = () => {
         <nav>
           {user && (
             <div>
-              <span>{user.email}</span>
+              <span>{user.email}'s Pokedex</span>
               <button onClick={handleClick}>Log out</button>
             </div>
           )}
