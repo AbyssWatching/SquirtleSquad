@@ -4,19 +4,14 @@
     font-family: 'Press Start 2P';
 }
 
-.logo:hover {
-    filter: hue-rotate(100deg);
-}
-
 .home {
-    background-color: #e44141;
+    background-color: rgb(228, 65, 65);
     padding: 20px;
     border: 5px solid black;
-    border-radius: 3px;
 }
 
 .cards {
-    background-image: linear-gradient(rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    background-color: whitesmoke;
     padding: 20px;
     margin: 20px;
     border-radius: 5px;
@@ -24,56 +19,6 @@
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
 }
-
-.roll-button {
-    padding: 8px;
-    font-size: large;
-    background-color: #658EEB;
-    color: yellow;
-    border-color: #5578C9;
-    border-radius: 10px;
-    margin: auto;
-    position: relative;
-    left: 212px;
-    margin: 5px 0 15px 0;
-}
-
-.roll-button:hover {
-    background-color: #5578C9;
-    color: white;
-    border-color: #5578C9;
-    box-shadow: 1px 1px 15px yellow;
-}
-@keyframes glowing {
-    0% {
-      color: yellow;
-      box-shadow: 0 0 3px white;
-    }
-    20% {
-      color: white;
-      box-shadow: 0 0 10px yellow;
-    }
-    40% {
-        color: yellow;
-        box-shadow: 0 0 3px white;
-      }
-    60% {
-    color: white;
-            box-shadow: 0 0 10px yellow;
-  }
-     80% {
-       color: yellow;
-       box-shadow: 0 0 3px white;
-     }
-     100% {
-        color: white;
-        box-shadow: 0 0 10px yellow;
-      }
-  }
-
-  .roll-button:hover {
-    animation: glowing 1000ms infinite;
-  }
 
 
 .card-collection {
@@ -91,13 +36,10 @@
     border: 6px solid yellow;
 }
 
-.card-container:hover {
-    box-shadow: 1px 1px 5px white;
-}
-
 .sprite {
     margin: auto;
     height: 200px;
+    /* width: 200px; */
     max-height: 200px;
     max-width: 200px;
     position: relative;
@@ -107,6 +49,7 @@
 
 .content-container {
     height: 190px;
+    /* padding-bottom: auto; */
 }
 
 .pokemon-name {
@@ -121,7 +64,6 @@
     color: white;
     letter-spacing: 1.5px;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
-    text-transform: capitalize;
 }
 
 .pokemon-type {
@@ -140,6 +82,7 @@
     line-height: 1.3;
     margin-left: 10px;
     margin-right: 10px;
+    /* margin-bottom: auto; */
     box-shadow: 0 0 3px rgb(158, 158, 158);
 }
 
@@ -154,17 +97,17 @@
     font-size: 11px;
     padding-left: 15px;
     letter-spacing: 1px;
+    /* display: block; */
 }
 
 .delete-button {
     text-align: center;
-    font-size: 25px;
     padding: 0 5px 0 5px;
     background-color: #E31010;
     color: white;
     position: relative;
-    left: 165px;
-    bottom: 401px; 
+    left: 167px;
+    bottom: 400px; 
     height: 50px;
     width: 50px;
     border: 2px solid black;
@@ -172,7 +115,7 @@
 }
 
 .delete-button:hover {
-    background-color: #e44141;
+    background-color: #ff1717;
     color: #feffec;
     box-shadow: 1px 1px 5px black;
     opacity: 1;
