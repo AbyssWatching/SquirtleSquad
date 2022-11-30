@@ -1,30 +1,25 @@
 import "../assets/css/style.css"
-import play_button from "../assets/images/play_button.png"
-import stop_button from "../assets/images/stop_button.png"
-
+import { BsFillPlayCircleFill, BsFillPauseCircleFill, BsFillFileMusicFill } from 'react-icons/bs'
+import { songdata } from "../assets/audio/audio"
 const AudioPlayer = () => {
-
-    function playPokemonCenterMusic() {
-        var audio = document.createElement('audio');
-        audio.src = 'https://www.youtube.com/watch?v=es_E2fdNa8M';
+    const playlist = songdata.url
+    const audio = new Audio(playlist)
+    async function playMusic() {
         audio.loop = true;
-        audio.play();
+        audio.volume = .04;
+        audio.play()
     }
 
-    function stopPokemonCenterMusic() {
-        var audio = document.createElement('audio');
-        audio.src = 'https://www.youtube.com/watch?v=es_E2fdNa8M';
-        audio.loop = true;
-        audio.pause();
+    function stopMusic() {
+        audio.pause()
     }
 
     return (
         <div>
             <div>
-                <button onClick={playPokemonCenterMusic()}>< img src={play_button} alt="Play" className="play_btn" /></button>
-            </div>
-            <div>
-                <button onClick={stopPokemonCenterMusic()}><img src={stop_button} alt="stop" className="stop_btn"/></button>
+                <button onClick={playMusic}>< BsFillPlayCircleFill /></button>
+                <button onClick={stopMusic}>< BsFillPauseCircleFill /></button>
+                <p><BsFillFileMusicFill/>Pokemon Collosseum - Pokemon Center<BsFillFileMusicFill/></p>
             </div>
         </div>
     )
