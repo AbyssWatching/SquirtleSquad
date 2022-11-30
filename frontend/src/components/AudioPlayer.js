@@ -18,10 +18,10 @@ const AudioPlayer = () => {
     return (
         <div>
             <div>
-                <button onClick={playPokemonCenterMusic()}>Play</button>
+                <button className="playbtn" onClick={playPokemonCenterMusic()}>Play</button>
             </div>
             <div>
-                <button onClick={stopPokemonCenterMusic()}>Stop</button>
+                <button className="stopbtn" onClick={stopPokemonCenterMusic()}>Stop</button>
             </div>
         </div>
     )
