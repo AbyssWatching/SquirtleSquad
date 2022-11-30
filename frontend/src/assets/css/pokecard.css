@@ -29,7 +29,7 @@ yellow red circles to resemble pokedex */
     border-bottom-left-radius: 100px;
 }
 
-.roll-button {
+    .roll-button {
     padding: 8px;
     font-size: large;
     background-color: #658EEB;
@@ -39,9 +39,9 @@ yellow red circles to resemble pokedex */
     position: relative;
     left: 200px;
     margin: 5px 0 5px 0;
-    transition: ease-in .35s;
-    animation: blink .5s infinite
-}
+    border-radius: 10px;
+    }
+
 
 .roll-button:hover {
     background-color: #5578C9;
