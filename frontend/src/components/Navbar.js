@@ -31,14 +31,10 @@ const Navbar = () => {
           {!user && (
             <div>
               <button className='btn1'>
-              <ul className='login'>
               <Link to="/login">Login</Link>
-              </ul>
               </button>
               <button className='btn2'>
-              <ul className='signup'>
               <Link to="/signup">Signup</Link>
-              </ul>
               </button>
             </div>
           )}

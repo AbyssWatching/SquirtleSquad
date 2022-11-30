@@ -12,6 +12,8 @@ a:link{
     text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing:2.3px;
+    font-size: calc(15vw/10);
+    
 
 }
 .signup{
@@ -30,8 +32,10 @@ ul {
     box-shadow: 0 20px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: red;
     background-position: 5rem;
-    margin-left: calc(405vw/10);
+    margin-left: calc(390vw/10);
     border-radius: 20%;
+    height: calc(20vw/10);
+    width: calc(90vw/10);
 }
 
 .btn2{
@@ -39,6 +43,8 @@ ul {
     background-color:red;
     margin-left: calc(50vw/10);
     border-radius: 20%;
+    height: calc(20vw/10);
+    width: calc(90vw/10);
    
 }
 
@@ -63,6 +69,9 @@ a:hover {
     text-decoration: none;
     opacity: 1;
     transition: ease-in .5s;
+    
 }
+
+
 
 
