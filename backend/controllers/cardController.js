@@ -14,8 +14,8 @@ const getCards = async (req, res) => {
 const postCard = async (req, res) => {
     const {id, name, type1, type2, weight, height, image} = req.body
     try {
-        const favorite = null
         const user_id = req.user.id
+        const favorite = false
         const card = await Card.create({id, name, type1, type2, weight, height, image, user_id, favorite})
         res.status(200).json(card)
     } catch (err) {
@@ -42,22 +42,24 @@ const deleteCard = async (req, res) => {
     res.status(200).json(card)
 }
 
-//update if card is favorite or not
-// const favoriteCard = async (req, res) => {
+// UPDATE CARD FAVORITE
+const favoriteCard = async (req, res) => {
+    const { id } = req.params
 
-//     const id = req.params
-//     const favoriteToInvert = Card.findById(id).favorite
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+        return res.status(404).json({error: 'Hit here'})
+     }
 
-//     console.log(favoriteToInvert)
+     const card = await Card.findByIdAndUpdate({_id: id}, {
+        ...req.body
+     })
 
-//     const cardFavoriteUpdate = await Card.findByIdAndUpdate({_id: id},{favorite: !favoriteToInvert})
-
-//     if(!cardFavoriteUpdate){
-        
-//         return res.status(400).json({error: 'Boy we did somethig wrong'})
-//     }
-
-// }
+     if (!card) {
+        return res.status(400).json({error: 'No such card exists'})
+     }
+    
+     res.status(200).json(card)
+}
 
 
-module.exports = {getCards, postCard, deleteCard, }
+module.exports = {getCards, postCard, deleteCard, favoriteCard}

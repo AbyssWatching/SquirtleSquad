@@ -26,6 +26,36 @@ const CardDetails = ({ card }) => {
     }
   }
 
+  const updateCard = async () => {
+    if (!user) {
+      return
+    }
+
+    const response = await fetch('http://localhost:9000/api/cards/' + card._id, {
+      method: 'PATCH',
+      headers: {
+        'Authorization': `Bearer ${user.token}`
+      },
+      body: JSON.stringify({
+          cards: {
+            favorite: !card.favorite
+          }
+        })
+      }
+    )
+    const json = await response.json()
+    console.log(json)
+
+    if (response.ok) {
+      dispatch({type: 'UPDATE_CARD', payload: json})
+    }
+    // const mapStateToProps = async function(state) {
+    //   return {
+    //     card: state.card
+    //   };
+    // };
+  }
+
   return (
     <div className='card-collection'>
     <div className="card-container">
@@ -39,6 +69,7 @@ const CardDetails = ({ card }) => {
       </div>
     </div>
     <button className="delete delete-button" onClick={handleClick}><i className="fa fa-trash-o"></i></button>
+
     </div>
   )
 }

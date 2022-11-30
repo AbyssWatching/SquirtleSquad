@@ -1,6 +1,6 @@
 const express = require('express')
 
-const {getCards, postCard, deleteCard, } = require('../controllers/cardController')
+const {getCards, postCard, deleteCard, favoriteCard } = require('../controllers/cardController')
 const requireAuth = require('../middleware/requireAuth')
 
 const router = express.Router()
@@ -15,6 +15,6 @@ router.post('/', postCard)
 
 router.delete('/:id', deleteCard)
 
-// router.put('/:id', favoriteCard)
+router.patch('/:id', favoriteCard)
 
 module.exports = router
