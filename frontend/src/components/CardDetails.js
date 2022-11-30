@@ -38,7 +38,7 @@ const CardDetails = ({ card }) => {
         <p className='pokemon-weight'>Weight: {card.weight} hg</p>
       </div>
     </div>
-    <button className="delete-button" onClick={handleClick}><i class="fa fa-trash-o"></i></button>
+    <button className="delete-button" onClick={handleClick}><i className="fa fa-trash-o"></i></button>
     </div>
   )
 }
