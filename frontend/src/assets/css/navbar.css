@@ -12,7 +12,7 @@ a:link{
     text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing:2.3px;
-    
+
 }
 .signup{
     text-align: center;
@@ -27,37 +27,42 @@ ul {
 } 
 
 .btn1{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    background-color: transparent;
+    box-shadow: 0 20px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: red;
     background-position: 5rem;
     margin-left: calc(405vw/10);
+    border-radius: 20%;
 }
 
 .btn2{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    background-color: transparent;
+    background-color:red;
     margin-left: calc(50vw/10);
-    
+    border-radius: 20%;
+   
 }
 
 .btn1:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: rgb(70, 101, 206);
     background-position: 5rem;
-    margin-left: calc(405vw/10);
-    border-color: rgb(218, 218, 49);
+    opacity: 1;
+    transition: ease-in .5s;
 }
 
 .btn2:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: rgb(70, 101, 206);
     margin-left: calc(50vw/10);
-   border-color: rgb(218, 218, 49);
+   opacity: 1;
+   transition: ease-in .5s;
 }
 
 a:hover {
-    color:yellow;
+    color:rgb(218, 218, 49);
     text-decoration: none;
+    opacity: 1;
+    transition: ease-in .5s;
 }
 
 .logout-button {

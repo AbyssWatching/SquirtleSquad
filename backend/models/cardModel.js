@@ -34,8 +34,12 @@ const cardSchema = new Schema({
     user_id: {
         type: String,
         required: true
+    },
+    favorite: {
+        type: Boolean,
+        default: false,
+        require: false
     }
-    
 
 
 })

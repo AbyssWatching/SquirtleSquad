@@ -30,9 +30,8 @@ const GachaSystem = () => {
           type2: pokemonType2,
           height: pokemonHeight,
           weight: pokemonWeight,
-          image: pokemonImage
+          image: pokemonImage,
       };
-      console.log(card)
       const options = {
         method: 'POST',
         headers: {
@@ -42,13 +41,11 @@ const GachaSystem = () => {
         },
         body: JSON.stringify(card)
       };
-      console.log(options)
       const response = await fetch('http://localhost:9000/api/cards', options);
       const json = await response.json();
       if (response.ok) {
         dispatch({type: 'CREATE_CARDS', payload: json})
       }
-      console.log(json);
     }
 
     return (

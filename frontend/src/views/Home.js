@@ -6,6 +6,7 @@ import "../assets/css/pokedex.css"
 // components
 import CardDetails from '../components/CardDetails'
 import GachaSystem from '../components/GachaSystem'
+import AudioPlayer from '../components/AudioPlayer'
 
 const Home = () => {
   const {cards, dispatch} = useCardsContext()
@@ -37,10 +38,11 @@ const Home = () => {
         <div className='light-container'><div className='light-red'></div><div className='light-yellow'></div><div className='light-green'></div></div>
         </div>
       <div className="cards">
+        <AudioPlayer />
         <GachaSystem />
         <br></br>
         {cards && cards.map((card) => (
-          <CardDetails key={card.id} card={card} />
+          <CardDetails key={card._id} card={card} />
         ))}
       </div>
     </div>
