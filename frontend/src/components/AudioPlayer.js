@@ -21,10 +21,10 @@ const AudioPlayer = () => {
     return (
         <div>
             <div>
-                <button onClick={playPokemonCenterMusic()}>< img src={play_button} alt="Play"  /></button>
+                <button onClick={playPokemonCenterMusic()}>< img src={play_button} alt="Play" className="play_btn" /></button>
             </div>
             <div>
-                <button onClick={stopPokemonCenterMusic()}><img src={stop_button} alt="stop" className="stopbtn"/></button>
+                <button onClick={stopPokemonCenterMusic()}><img src={stop_button} alt="stop" className="stop_btn"/></button>
             </div>
         </div>
     )

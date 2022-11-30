@@ -89,6 +89,12 @@
         
 }
 
-.playbtn{
-    width: 10px;
+.play_btn{
+    width: calc(20vw/10);
+}
+
+.stop_btn{
+    width: calc(25vw/10);
+    background: none;
+    border: none;
 }
