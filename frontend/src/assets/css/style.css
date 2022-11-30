@@ -7,7 +7,7 @@
 } 
 
 
-h3{
+.log_h{
     color:rgb(218, 218, 49);
     margin: 5%;
     margin-left: calc(33vw/10);
@@ -29,8 +29,8 @@ h3{
 .logbtn{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color:rgb(242, 30, 30);
-    margin-left: calc(20vw/10);
-    border-radius: 20%;
+    margin-left: calc(23vw/10);
+    border-radius: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 2px;
     font-size: calc(20vw/10);
@@ -40,7 +40,8 @@ h3{
 }
 
 .logbtn:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow:2px 2px 22px 22px rgb(218, 218, 49);
+    background-color:rgb(242, 30, 30);
     color: rgb(218, 218, 49);
    opacity: 1;
    transition: ease-in .35s;
@@ -51,6 +52,7 @@ h3{
     justify-content: center;
     display: flex;
     padding: 90px 0 90px 0;
+    margin-left: 30px;
 }
 
 .main1{
@@ -86,3 +88,10 @@ h3{
         
 }
 
+.play_btn{
+    width: calc(20vw/10);
+}
+
+.stop_btn{
+    width: calc(20vw/10);
+}

@@ -12,6 +12,8 @@ a:link{
     text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing:2.3px;
+    font-size: calc(15vw/10);
+    
 
 }
 .signup{
@@ -30,20 +32,24 @@ ul {
     box-shadow: 0 20px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: red;
     background-position: 5rem;
-    margin-left: calc(405vw/10);
-    border-radius: 20%;
+    margin-left: calc(390vw/10);
+    border-radius: 10px;
+    height: calc(20vw/10);
+    width: calc(90vw/10);
 }
 
 .btn2{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color:red;
     margin-left: calc(50vw/10);
-    border-radius: 20%;
+    border-radius: 10px;
+    height: calc(20vw/10);
+    width: calc(90vw/10);
    
 }
 
 .btn1:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow:2px 2px 22px 22px rgb(218, 218, 49);
     background-color: rgb(70, 101, 206);
     background-position: 5rem;
     opacity: 1;
@@ -51,7 +57,7 @@ ul {
 }
 
 .btn2:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow:2px 2px 22px 22px rgb(218, 218, 49);
     background-color: rgb(70, 101, 206);
     margin-left: calc(50vw/10);
    opacity: 1;
@@ -63,6 +69,7 @@ a:hover {
     text-decoration: none;
     opacity: 1;
     transition: ease-in .5s;
+    
 }
 
 .logout-button {
@@ -87,3 +94,4 @@ a:hover {
     left: 150px;
     overflow: scroll;
 }
+
