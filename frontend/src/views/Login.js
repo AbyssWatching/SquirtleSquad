@@ -21,7 +21,7 @@ const Login = () => {
     
 
         <form className="login" onSubmit={handleSubmit}>
-          <h3>Log In</h3>
+          <h3 className="log_h">Log In</h3>
           
       <div className="emailbox">
         <label ><img src={email_icon} alt="email" className="email_icon"/></label>

@@ -21,7 +21,7 @@ const Signup = () => {
       <div className="main1">
     
           <form className="signup" onSubmit={handleSubmit}>
-          <h3>Sign Up</h3>
+          <h3 className="log_h">Sign Up</h3>
           
           <div className="emailbox">
 
