@@ -49,7 +49,7 @@ ul {
 }
 
 .btn1:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow:2px 2px 22px 22px rgb(218, 218, 49);
     background-color: rgb(70, 101, 206);
     background-position: 5rem;
     opacity: 1;
@@ -57,7 +57,7 @@ ul {
 }
 
 .btn2:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow:2px 2px 22px 22px rgb(218, 218, 49);
     background-color: rgb(70, 101, 206);
     margin-left: calc(50vw/10);
    opacity: 1;
