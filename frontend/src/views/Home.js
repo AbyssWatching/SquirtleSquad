@@ -5,6 +5,7 @@ import { useAuthContext } from "../hooks/useAuthContext"
 // components
 import CardDetails from '../components/CardDetails'
 import GachaSystem from '../components/GachaSystem'
+import AudioPlayer from '../components/AudioPlayer'
 
 const Home = () => {
   const {cards, dispatch} = useCardsContext()
@@ -30,6 +31,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="cards">
+        <AudioPlayer />
         <GachaSystem />
         <br></br>
         {cards && cards.map((card) => (

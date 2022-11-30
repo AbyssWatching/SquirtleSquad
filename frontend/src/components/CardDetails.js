@@ -32,7 +32,8 @@ const CardDetails = ({ card }) => {
       <img className='sprite' src={card.image} alt='pokemon' />
       <div className='content-container'>
         <h1 className='pokemon-name'> {card.name}</h1>
-        <p className='pokemon-type'>{card.type1} {card.type2}</p>
+        <p className='pokemon-type'>{card.type1}</p>
+        <p className='pokemon-type'>{card.type2}</p>
         <p className='pokemon-height'>Height: {card.height} dm</p>
         <p className='pokemon-weight'>Weight: {card.weight} hg</p>
       </div>

@@ -1,6 +1,7 @@
 const Card = require('../models/cardModel')
 const mongoose = require('mongoose')
 const jwt = require('jsonwebtoken')
+
 // GET ALL CARDS IN COLLECTION
 const getCards = async (req, res) => {
     const user_id = req.user.id
@@ -8,10 +9,8 @@ const getCards = async (req, res) => {
   
     res.status(200).json(cards)
   }
+
 // ADD NEW CARD TO COLLECTION
-
-
-
 
 const postCard = async (req, res) => {
     const {id, name, type1, type2, weight, height, image} = req.body
@@ -25,7 +24,7 @@ const postCard = async (req, res) => {
     }
 }
 
-//Delete THEM CARDS
+// DELETE A CARD
 const deleteCard = async (req, res) => {
     
     
