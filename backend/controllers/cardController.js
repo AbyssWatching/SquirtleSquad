@@ -1,6 +1,5 @@
 const Card = require('../models/cardModel')
 const mongoose = require('mongoose')
-const jwt = require('jsonwebtoken')
 
 // GET ALL CARDS IN COLLECTION
 const getCards = async (req, res) => {
