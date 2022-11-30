@@ -13,7 +13,6 @@ const getCards = async (req, res) => {
 
 const postCard = async (req, res) => {
     const {id, name, type1, type2, weight, height, image} = req.body
-    // request.connection.setTimeout(1000 * 60 * 30);
     try {
         const favorite = null
         const user_id = req.user.id
