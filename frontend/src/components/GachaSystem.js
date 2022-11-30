@@ -30,7 +30,7 @@ const GachaSystem = () => {
           type2: pokemonType2,
           height: pokemonHeight,
           weight: pokemonWeight,
-          image: pokemonImage
+          image: pokemonImage,
       };
       const options = {
         method: 'POST',
