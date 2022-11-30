@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;1,700&family=Press+Start+2P&display=swap');
 
-/* Add blue lenses to pokedex border and green, 
-yellow red circles to resemble pokedex */
-/* change log out to X and put on the right */
-
-
 * {
     font-family: 'Press Start 2P';
 }
@@ -36,10 +31,11 @@ yellow red circles to resemble pokedex */
     background-color: #658EEB;
     color: yellow;
     border-color: #5578C9;
+    border-radius: 10px;
     margin: auto;
     position: relative;
-    left: 200px;
-    margin: 5px 0 5px 0;
+    left: 212px;
+    margin: 5px 0 15px 0;
 }
 
 .roll-button:hover {
@@ -48,6 +44,37 @@ yellow red circles to resemble pokedex */
     border-color: #5578C9;
     box-shadow: 1px 1px 15px yellow;
 }
+@keyframes glowing {
+    0% {
+      color: yellow;
+      box-shadow: 0 0 3px white;
+    }
+    20% {
+      color: white;
+      box-shadow: 0 0 10px yellow;
+    }
+    40% {
+        color: yellow;
+        box-shadow: 0 0 3px white;
+      }
+    60% {
+    color: white;
+            box-shadow: 0 0 10px yellow;
+  }
+     80% {
+       color: yellow;
+       box-shadow: 0 0 3px white;
+     }
+     100% {
+        color: white;
+        box-shadow: 0 0 10px yellow;
+      }
+  }
+
+  .roll-button:hover {
+    animation: glowing 1000ms infinite;
+  }
+
 
 .card-collection {
     display: inline-block;
