@@ -5,7 +5,7 @@ import "../assets/css/pokecard.css"
 
 
 const CardDetails = ({ card }) => { //destructure from property
-  const { dispatch } = useCardsContext()
+  const { dispatch } = useCardsContext() //grab dispatch function
   const { user } = useAuthContext()
 
   const handleClick = async () => {
@@ -13,16 +13,16 @@ const CardDetails = ({ card }) => { //destructure from property
       return
     }
 
-    const response = await fetch('http://localhost:9000/api/cards/' + card._id, {
-      method: 'DELETE',
+    const response = await fetch('http://localhost:9000/api/cards/' + card._id, { //find by unique id of card in the db
+      method: 'DELETE', //here's the method
       headers: {
-        'Authorization': `Bearer ${user.token}`
+        'Authorization': `Bearer ${user.token}` //token requirement
       }
     })
-    const json = await response.json()
+    const json = await response.json() //this is where the card we just deleted is now
 
-    if (response.ok) {
-      dispatch({type: 'DELETE_CARD', payload: json})
+    if (response.ok) {                              // and if okay
+      dispatch({type: 'DELETE_CARD', payload: json}) //delete
     }
   }
 

@@ -6,23 +6,23 @@ const GachaSystem = () => {
   const { dispatch } = useCardsContext()
 
   async function getPokemonData(pokemonId) {
-      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`);
+      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`); //fetch data from the API
       const data = await response.json();
       return data;
     }
 
   async function rollPokemon() {
 
-      const randomPokemonId = Math.floor(Math.random() * 905) + 1;
-      const data = await getPokemonData(randomPokemonId);
-      const pokemonId = data.id;
+      const randomPokemonId = Math.floor(Math.random() * 905) + 1; 
+      const data = await getPokemonData(randomPokemonId); //grab our random pokemon
+      const pokemonId = data.id; //all our properties for the cards table in the db, defining the data we need
       const pokemonName = data.name;
       const pokemonType1 = data.types[0].type.name;
       const pokemonType2 = data.types[1]?.type.name ?? null;
       const pokemonWeight = data.weight;
       const pokemonHeight = data.height;
       const pokemonImage = data.sprites.front_default;
-      const card = {
+      const card = { // define card which will be the data we want to send in json
           id: pokemonId,
           name: pokemonName,
           type1: pokemonType1,
@@ -31,19 +31,19 @@ const GachaSystem = () => {
           weight: pokemonWeight,
           image: pokemonImage,
       };
-      const options = {
+      const options = { //options is additional 'config' in our case we are using the POST method submitting the Authorization key and content type
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${user.token}`,
           'Content-Type': 'application/json'
           
         },
-        body: JSON.stringify(card)
+        body: JSON.stringify(card) //we are also sending the card data in json here
       };
-      const response = await fetch('http://localhost:9000/api/cards', options);
-      const json = await response.json();
+      const response = await fetch('http://localhost:9000/api/cards', options); 
+      const json = await response.json(); //send our request
       if (response.ok) {
-        dispatch({type: 'CREATE_CARDS', payload: json})
+        dispatch({type: 'CREATE_CARDS', payload: json}) //if the response is okay dispatch (action) CREATE_CARDS and payload (card)
       } 
     var btnCount = 0;
     function addRow() {

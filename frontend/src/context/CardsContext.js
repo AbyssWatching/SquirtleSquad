@@ -14,7 +14,7 @@ export const cardsReducer = (state, action) => { //state which is set to null, t
       }
     case 'DELETE_CARD':
       return {
-        cards: state.cards.filter((w) => w._id !== action.payload._id)
+        cards: state.cards.filter((w) => w._id !== action.payload._id) // state = CURRENT state (so all SET cards). cards is our cards array then filter said cards then fire functions for each one and return true or false for each one. If Card ID does not match our payload Card ID DO NOT DELETE. So now we're left with all our currents except for the one we just deleted
       }
     default: //if none match
       return state //return the state null
@@ -23,7 +23,7 @@ export const cardsReducer = (state, action) => { //state which is set to null, t
 
 export const CardsContextProvider = ({ children }) => { //children is everything that this provider component wraps in our app. This allows everything wrapped by the providor to use the CardsContext
   const [state, dispatch] = useReducer(cardsReducer, { //dispatch is the action to invoke a change in state
-    cards: null //The current state of cards
+    cards: null //The current global state of cards
   })
 
   return (
