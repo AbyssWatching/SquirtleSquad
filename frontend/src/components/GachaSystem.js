@@ -44,7 +44,19 @@ const GachaSystem = () => {
       const json = await response.json();
       if (response.ok) {
         dispatch({type: 'CREATE_CARDS', payload: json})
-      }
+      } 
+    var btnCount = 0;
+    function addRow() {
+        btnCount++;
+        if(btnCount > 3) {
+            alert("You can't click me anymore");
+            return;
+        }
+    }
+
+
+
+
     }
 
     return (

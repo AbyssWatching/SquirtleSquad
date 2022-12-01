@@ -18,4 +18,4 @@ router.delete('/:id', deleteCard)
 
 router.patch('/:id', favoriteCard)
 
-module.exports = router
+module.exports = router //export to the server

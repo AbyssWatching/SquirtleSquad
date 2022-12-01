@@ -1,5 +1,5 @@
 //DEPENDENCIES
-require('dotenv').config()
+require('dotenv').config() //Attach env variables
 const cors = require('cors')
 
 const express = require('express')
@@ -15,11 +15,11 @@ app.use(express.json())
 app.use(cors())
 
 app.use((req, res, next) => {
-  next()
+  next() //Fire next to move to the next bit of middleware
 })
 
 // ROUTES
-app.use('/api/cards', cardsRoutes)
+app.use('/api/cards', cardsRoutes) // Our API routes
 app.use('/api/user', userRoutes)
 
 // connect to db

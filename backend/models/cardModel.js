@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema
+const Schema = mongoose.Schema //function to create a new Schema
 
-const cardSchema = new Schema({
+const cardSchema = new Schema({ //then create the Schema
     id: {
         type: Number,
         require: true
