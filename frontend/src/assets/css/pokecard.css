@@ -4,10 +4,6 @@
     font-family: 'Press Start 2P';
 }
 
-.logo:hover {
-    filter: hue-rotate(100deg);
-}
-
 .home {
     background-color: #e44141;
     padding: 20px;
@@ -187,7 +183,7 @@
     cursor: pointer;
 }
 .btn:active {
-    transform: translateY(8px);
+    transform: translateY(5px);
 }
 
 
