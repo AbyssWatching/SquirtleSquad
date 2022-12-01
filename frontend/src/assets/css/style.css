@@ -29,7 +29,7 @@
 .logbtn{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color:rgb(242, 30, 30);
-    margin-left: calc(23vw/10);
+    margin-left: calc(13vw/10);
     border-radius: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 2px;
@@ -85,5 +85,6 @@
 .emailbox,.passbox{
         margin: 1vh;
         position: relative;
+        padding-right: 30px;
         
 }
