@@ -17,8 +17,8 @@ const AudioPlayer = () => {
     return (
         <div>
             <div>
-                <button onClick={playMusic}>< BsFillPlayCircleFill /></button>
-                <button onClick={stopMusic}>< BsFillPauseCircleFill /></button>
+                <button className="btn" onClick={playMusic}>< BsFillPlayCircleFill /></button>
+                <button className="btn" onClick={stopMusic}>< BsFillPauseCircleFill /></button>
                 <p><BsFillFileMusicFill/>Pokemon Collosseum - Pokemon Center<BsFillFileMusicFill/></p>
             </div>
         </div>

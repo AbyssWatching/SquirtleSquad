@@ -48,7 +48,7 @@ const GachaSystem = () => {
     }
 
     return (
-      <button className='roll-button' onClick={() => rollPokemon()}>Roll Pokemon</button>
+      <button className='roll-button btn' onClick={() => rollPokemon()}>Roll Pokemon</button>
     )
   } 
 

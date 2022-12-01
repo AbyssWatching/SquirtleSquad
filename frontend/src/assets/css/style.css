@@ -87,11 +87,3 @@
         position: relative;
         
 }
-
-.play_btn{
-    width: calc(20vw/10);
-}
-
-.stop_btn{
-    width: calc(20vw/10);
-}

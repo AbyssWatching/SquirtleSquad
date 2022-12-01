@@ -43,7 +43,7 @@ const Signup = () => {
             />
          
           </div>
-         <button className="logbtn" disabled={isLoading}>Sign up</button>
+         <button className="logbtn btn btn" disabled={isLoading}>Sign up</button>
          {error && <div className="error">{error}</div>}
         </form>
       </div>

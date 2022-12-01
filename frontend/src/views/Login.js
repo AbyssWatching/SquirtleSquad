@@ -39,7 +39,7 @@ const Login = () => {
         value={password} 
         />
       </div>
-        <button className="logbtn"disabled={isLoading}>Log in</button>
+        <button className="logbtn btn"disabled={isLoading}>Log in</button>
         {error && <div className="error">{error}</div>}
         </form>
       </div>
