@@ -11,8 +11,8 @@ export const useLogout = () => {
         localStorage.removeItem('user')
 
         // DISPATCH LOGOUT
-        dispatch({type: 'LOGOUT'})
-        dispatchCards({ type: 'SET_CARDS', payload: null})
+        dispatch({type: 'LOGOUT'}) //Dispatch logout and we already set the user state to null
+        dispatchCards({ type: 'SET_CARDS', payload: null}) //Set the state to null so the cards get removed from the dashboard
     }
 
     return { logout }
