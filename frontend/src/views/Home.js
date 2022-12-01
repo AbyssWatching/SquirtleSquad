@@ -10,7 +10,7 @@ import AudioPlayer from '../components/AudioPlayer'
 
 const Home = () => {
   const {cards, dispatch} = useCardsContext() // so the current state is null until we want to fetch which is our dispatch when we fetchCards below
-  const {user} = useAuthContext()
+  const {user} = useAuthContext() //grabs the user from the hook
 
   useEffect(() => {
     const fetchCards = async () => {
@@ -24,7 +24,7 @@ const Home = () => {
       }
     }
 
-    if (user) {
+    if (user) { //if there is a user then execute
       fetchCards()
     }
   }, [dispatch, user]) //external dependencies need to be declared in dependency array. IN ANY WAY the dispatch function changes it would re-run fetchCards which shouldn't happen

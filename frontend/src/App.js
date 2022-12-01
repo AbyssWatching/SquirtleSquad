@@ -18,16 +18,16 @@ function App() {
         <div className="views">
           <Routes>
             <Route 
-              path="/" 
-              element={user ? <Home /> : <Navigate to="/login" />} 
+              path="/"                                              //protect routes
+              element={user ? <Home /> : <Navigate to="/login" />}  //If user exist render Home, if false send user to login
             />
             <Route 
               path="/login" 
-              element={!user ? <Login /> : <Navigate to="/" />} 
+              element={!user ? <Login /> : <Navigate to="/" />} //if no user exist render login, if false send to home page
             />
             <Route 
               path="/signup" 
-              element={!user ? <Signup /> : <Navigate to="/" />} 
+              element={!user ? <Signup /> : <Navigate to="/" />} //if no user exist render login, if false send to home page
             />
           </Routes>
         </div>
