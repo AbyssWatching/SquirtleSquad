@@ -30,7 +30,7 @@ const CardDetails = ({ card }) => {
   return (
     <div className='card-collection'>
       <div className="card-container">
-        <img className='sprite' src={card.image} alt='pokemon' />
+      <a href={`https://bulbapedia.bulbagarden.net/wiki/${card.name}_(Pokémon)`} target="_blank"><img className='sprite' src={card.image} alt='pokemon'/></a>
         <div className='content-container'>
           <h1 className='pokemon-name'> {card.name}</h1>
           <p className='pokemon-id'>#{card.id}</p>
