@@ -27,7 +27,7 @@ const Home = () => {
     if (user) {
       fetchCards()
     }
-  }, [dispatch, user])
+  }, [dispatch, user]) //external dependencies need to be declared in dependency array. IN ANY WAY the dispatch function changes it would re-run fetchCards which shouldn't happen
 
   return (
     <div className="home">
