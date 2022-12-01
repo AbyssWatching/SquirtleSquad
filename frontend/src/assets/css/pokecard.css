@@ -180,6 +180,7 @@
     box-shadow: 1px 1px 5px black;
     opacity: 1;
     transition: ease-in .5s;
+    animation: shake .5s;
 }
 
 .btn {
@@ -189,13 +190,24 @@
     transform: translateY(8px);
 }
 
-/* 
-@keyframes rotate {
-    0% {
 
+@keyframes shake {
+    0% {
+        transform: rotate(0);
+    }
+    20% {
+        transform: rotate(30deg);
+    }
+    40% {
+        transform: rotate(-30deg);
+    }
+    60% {
+        transform: rotate(30deg);
+    }
+    80% {
+        transform: rotate(-30deg);
     }
     100% {
-        transform: scale(2);
-        translate: ;
+        transform: rotate(0deg);
     }
-} */
+}
