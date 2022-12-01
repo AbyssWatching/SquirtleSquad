@@ -2,6 +2,7 @@ const express = require('express')
 
 const {getCards, postCard, deleteCard, favoriteCard } = require('../controllers/cardController')
 const requireAuth = require('../middleware/requireAuth')
+const limiter = require('../middleware/rateLimiter')
 
 const router = express.Router()
 
@@ -11,7 +12,7 @@ router.use(requireAuth)
 // GET ALL CARDS IN COLLECTION
 router.get('/', getCards)
 
-router.post('/', postCard)
+router.post('/', limiter, postCard)
 
 router.delete('/:id', deleteCard)
 
