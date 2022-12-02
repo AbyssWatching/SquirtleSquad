@@ -1,6 +1,7 @@
 Welcome to the Pokecha fullstack repo!
 
 This application was built using MongoDB, Express, React, and Node.js and has JWT Auth implemented
+All the data fetched comes from PokeAPI so go check them out for any projects here https://pokeapi.co
 
 This application is still in Alpha but a working build is deployed with Render (https://dashboard.render.com) and is available here https://pokecha.onrender.com/
 
